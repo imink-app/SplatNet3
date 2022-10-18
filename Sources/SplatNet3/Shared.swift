@@ -47,17 +47,6 @@ public struct SN3Color: Codable, Hashable {
 
 // MARK: -
 
-public struct SquidSpecies: RawRepresentable, Codable, Hashable {
-    
-    public let rawValue: String
-    public init(rawValue: String) {
-        self.rawValue = rawValue
-    }
-    
-    public static let inkling = Self(rawValue: "INKLING")
-    public static let octoling = Self(rawValue: "OCTOLING")
-}
-
 public struct Nameplate: Codable, Hashable {
     public let background: Background
     /// consists of 3 optioanl badge
@@ -70,13 +59,20 @@ public struct Nameplate: Codable, Hashable {
     }
 }
 
-// MARK: - VS
-
-public struct VSJudgement: RawRepresentable, Codable, Hashable {
+public struct SquidSpecies: RawRepresentable, Codable, Hashable {
+    
     public let rawValue: String
     public init(rawValue: String) {
         self.rawValue = rawValue
     }
+    
+    public static let inkling = Self(rawValue: "INKLING")
+    public static let octoling = Self(rawValue: "OCTOLING")
+}
+
+public struct VSJudgement: RawRepresentable, Codable, Hashable {
+    public let rawValue: String
+    public init(rawValue: String) { self.rawValue = rawValue }
     
     public static let win = Self(rawValue: "WIN")
     public static let lose = Self(rawValue: "LOSE")
@@ -87,9 +83,7 @@ public struct VSJudgement: RawRepresentable, Codable, Hashable {
 
 public struct VSKnockout: RawRepresentable, Codable, Hashable {
     public let rawValue: String
-    public init(rawValue: String) {
-        self.rawValue = rawValue
-    }
+    public init(rawValue: String) { self.rawValue = rawValue }
     
     public static let win = Self(rawValue: "WIN")
     public static let lose = Self(rawValue: "LOSE")
@@ -103,9 +97,7 @@ public struct VSMode: Codable, Hashable {
     
     public struct Mode: RawRepresentable, Codable, Hashable {
         public let rawValue: String
-        public init(rawValue: String) {
-            self.rawValue = rawValue
-        }
+        public init(rawValue: String) { self.rawValue = rawValue }
         
         public static let bankara = Self(rawValue: "BANKARA")
         public static let fest = Self(rawValue: "FEST")
@@ -116,13 +108,11 @@ public struct VSMode: Codable, Hashable {
 public struct VSRule: Codable, Hashable {
     public let id: SN3ID
     public let name: String
-    public let rule: String
+    public let rule: Rule
     
     public struct Rule: RawRepresentable, Codable, Hashable {
         public let rawValue: String
-        public init(rawValue: String) {
-            self.rawValue = rawValue
-        }
+        public init(rawValue: String) { self.rawValue = rawValue }
         
         public static let turfWar = Self(rawValue: "TURF_WAR")
         public static let splatZones = Self(rawValue: "AREA")

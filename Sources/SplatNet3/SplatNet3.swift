@@ -1,1 +1,1 @@
-enum SN3EndPoints {}
+public enum SN3EndPoints {}
