@@ -1,14 +1,8 @@
 import Foundation
 
-extension SN3EndPoints {
-    public typealias VSResults = [SN3DataItem<VSResult>]
-}
-
-public struct VSResult: Codable, Hashable {
+extension SN3Response {
     
-    public let vsHistoryDetail: Detail
-    
-    public struct Detail: Codable, Hashable {
+    public struct VSHistoryDetail: Codable, Hashable {
         public let __typename: String
         public let id: SN3ID
         public let playedTime: Date
@@ -34,7 +28,7 @@ public struct VSResult: Codable, Hashable {
     }
 }
 
-extension VSResult.Detail {
+extension SN3Response.VSHistoryDetail {
     
     public struct Award: Codable, Hashable {
         public let name: String
@@ -93,7 +87,7 @@ extension VSResult.Detail {
     }
 }
 
-extension VSResult.Detail.Team {
+extension SN3Response.VSHistoryDetail.Team {
     
     public struct Player: Codable, Hashable {
         public let id: SN3ID
@@ -133,7 +127,7 @@ extension VSResult.Detail.Team {
 }
 
 
-extension VSResult.Detail.Team.Player {
+extension SN3Response.VSHistoryDetail.Team.Player {
     
     public struct PlayerResult: Codable, Hashable {
         public let kill: Int

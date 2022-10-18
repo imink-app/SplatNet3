@@ -1,14 +1,8 @@
 import Foundation
 
-extension SN3EndPoints {
-    public typealias CoopResults = [SN3DataItem<CoopResult>]
-}
-
-public struct CoopResult: Codable, Hashable {
+extension SN3Response {
     
-    public let coopHistoryDetail: Detail
-    
-    public struct Detail: Codable, Hashable {
+    public struct CoopHistoryDetail: Codable, Hashable {
         public let __typename: String
         public let afterGrade: SN3IDName
         public let afterGradePoint: Int
@@ -37,7 +31,7 @@ public struct CoopResult: Codable, Hashable {
     }
 }
 
-extension CoopResult.Detail {
+extension SN3Response.CoopHistoryDetail {
     
     public struct BossResult: Codable, Hashable {
         public let boss: SN3IDNameImage
@@ -90,7 +84,7 @@ extension CoopResult.Detail {
     }
 }
 
-extension CoopResult.Detail.MemberResult {
+extension SN3Response.CoopHistoryDetail.MemberResult {
     
     public struct Player: Codable, Hashable {
         public let __isPlayer: String

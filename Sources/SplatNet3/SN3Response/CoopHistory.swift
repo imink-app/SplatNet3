@@ -1,18 +1,20 @@
 import Foundation
 
-public struct CoopHistories: Codable, Hashable {
+extension SN3Response {
     
-    public let historyGroupsOnlyFirst: SN3NodesItem<First>
-    public let regularAverageClearWave: Double
-    public let regularGrade: SN3IDName
-    public let regularGradePoint: Int
-    public let monthlyGear: MonthlyGear
-    public let scale: Scale
-    public let pointCard: PointCard
-    public let historyGroups: SN3NodesItem<Group>
+    public struct CoopHistory: Codable, Hashable {
+        public let historyGroupsOnlyFirst: SN3NodesItem<First>
+        public let regularAverageClearWave: Double
+        public let regularGrade: SN3IDName
+        public let regularGradePoint: Int
+        public let monthlyGear: MonthlyGear
+        public let scale: Scale
+        public let pointCard: PointCard
+        public let historyGroups: SN3NodesItem<Group>
+    }
 }
 
-extension CoopHistories {
+extension SN3Response.CoopHistory {
     
     public struct First: Codable, Hashable {
         public let historyDetails: SN3NodesItem<SN3JustID>
@@ -50,7 +52,7 @@ extension CoopHistories {
     }
 }
 
-extension CoopHistories.Group {
+extension SN3Response.CoopHistory.Group {
     
     public struct HighestResult: Codable, Hashable {
         public let grade: SN3IDName

@@ -1,13 +1,15 @@
 import Foundation
 
-public struct BattleHistories: Codable, Hashable {
+extension SN3Response {
     
-    public let summary: Summary
-    public let historyGroupsOnlyFirst: SN3NodesItem<First>
-    public let historyGroups: SN3NodesItem<Group>
+    public struct BattleHistories: Codable, Hashable {
+        public let summary: Summary
+        public let historyGroupsOnlyFirst: SN3NodesItem<First>
+        public let historyGroups: SN3NodesItem<Group>
+    }
 }
 
-extension BattleHistories {
+extension SN3Response.BattleHistories {
     
     public struct Summary: Codable, Hashable {
         public let assistAverage: Double
@@ -59,7 +61,7 @@ extension BattleHistories {
     }
 }
 
-extension BattleHistories.Group {
+extension SN3Response.BattleHistories.Group {
     
     public struct BankaraChallenge: Codable, Hashable {
         public let winCount: Int
