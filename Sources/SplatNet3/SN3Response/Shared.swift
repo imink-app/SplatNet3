@@ -2,11 +2,11 @@ import Foundation
 
 // MARK: - Container
 
-public struct SN3DataItem<Content>: Hashable, Codable where Content: Hashable, Content: Codable {
+public struct SN3DataItem<Content: Decodable>: Decodable {
     public let data: Content
 }
 
-public struct SN3NodesItem<Node>: Hashable, Codable where Node: Hashable, Node: Codable {
+public struct SN3NodesItem<Node: Decodable>: Decodable {
     public let nodes: [Node]
 }
 
@@ -18,7 +18,7 @@ extension SN3NodesItem: RandomAccessCollection {
 
 // MARK: - Basic
 
-public struct SN3ID: RawRepresentable, Hashable, Codable {
+public struct SN3ID: RawRepresentable, Codable {
     
     public let rawValue: String
     
@@ -44,43 +44,43 @@ public struct SN3ID: RawRepresentable, Hashable, Codable {
     }
 }
 
-public struct SN3Image: Codable, Hashable {
+public struct SN3Image: Decodable {
     public let url: URL
 }
 
-public struct SN3JustID: Codable, Hashable {
+public struct SN3JustID: Decodable {
     public let id: SN3ID
 }
 
-public struct SN3IDName: Codable, Hashable {
+public struct SN3IDName: Decodable {
     public let id: SN3ID
     public let name: String
 }
 
-public struct SN3IDImage: Codable, Hashable {
+public struct SN3IDImage: Decodable {
     public let id: SN3ID
     public let image: SN3Image
 }
 
-public struct SN3NameImage: Codable, Hashable {
+public struct SN3NameImage: Decodable {
     public let name: String
     public let image: SN3Image
 }
 
-public struct SN3IDNameImage: Codable, Hashable {
+public struct SN3IDNameImage: Decodable {
     public let id: SN3ID
     public let name: String
     public let image: SN3Image
 }
 
-public struct SN3MaskingImage: Codable, Hashable {
+public struct SN3MaskingImage: Decodable {
     public let width: Int
     public let height: Int
     public let maskImageUrl: String
     public let overlayImageUrl: String
 }
 
-public struct SN3Color: Codable, Hashable {
+public struct SN3Color: Decodable {
     public let r: Double
     public let g: Double
     public let b: Double
@@ -89,19 +89,19 @@ public struct SN3Color: Codable, Hashable {
 
 // MARK: Common
 
-public struct Nameplate: Codable, Hashable {
+public struct Nameplate: Decodable {
     public let background: Background
     /// consists of 3 optioanl badge
     public let badges: [SN3IDImage?]
     
-    public struct Background: Codable, Hashable {
+    public struct Background: Decodable {
         public let id: SN3ID
         public let image: SN3Image
         public let textColor: SN3Color
     }
 }
 
-public struct SquidSpecies: RawRepresentable, Codable, Hashable {
+public struct SquidSpecies: RawRepresentable, Decodable {
     
     public let rawValue: String
     public init(rawValue: String) {
@@ -112,7 +112,7 @@ public struct SquidSpecies: RawRepresentable, Codable, Hashable {
     public static let octoling = Self(rawValue: "OCTOLING")
 }
 
-public struct VSJudgement: RawRepresentable, Codable, Hashable {
+public struct VSJudgement: RawRepresentable, Decodable {
     public let rawValue: String
     public init(rawValue: String) { self.rawValue = rawValue }
     
@@ -123,7 +123,7 @@ public struct VSJudgement: RawRepresentable, Codable, Hashable {
     public static let deemedLose = Self(rawValue: "DEEMED_LOSE")
 }
 
-public struct VSKnockout: RawRepresentable, Codable, Hashable {
+public struct VSKnockout: RawRepresentable, Decodable {
     public let rawValue: String
     public init(rawValue: String) { self.rawValue = rawValue }
     
@@ -132,12 +132,12 @@ public struct VSKnockout: RawRepresentable, Codable, Hashable {
     public static let neither = Self(rawValue: "NEITHER")
 }
 
-public struct VSMode: Codable, Hashable {
+public struct VSMode: Decodable {
     
     public let id: SN3ID
     public let mode: Mode
     
-    public struct Mode: RawRepresentable, Codable, Hashable {
+    public struct Mode: RawRepresentable, Decodable {
         public let rawValue: String
         public init(rawValue: String) { self.rawValue = rawValue }
         
@@ -147,12 +147,12 @@ public struct VSMode: Codable, Hashable {
     }
 }
 
-public struct VSRule: Codable, Hashable {
+public struct VSRule: Decodable {
     public let id: SN3ID
     public let name: String
     public let rule: Rule
     
-    public struct Rule: RawRepresentable, Codable, Hashable {
+    public struct Rule: RawRepresentable, Decodable {
         public let rawValue: String
         public init(rawValue: String) { self.rawValue = rawValue }
         

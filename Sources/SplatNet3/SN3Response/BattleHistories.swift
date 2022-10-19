@@ -2,7 +2,7 @@ import Foundation
 
 extension SN3Response {
     
-    public struct BattleHistories: Codable, Hashable {
+    public struct BattleHistories: Decodable {
         public let summary: Summary
         public let historyGroupsOnlyFirst: SN3NodesItem<First>
         public let historyGroups: SN3NodesItem<Group>
@@ -11,7 +11,7 @@ extension SN3Response {
 
 extension SN3Response.BattleHistories {
     
-    public struct Summary: Codable, Hashable {
+    public struct Summary: Decodable {
         public let assistAverage: Double
         public let deathAverage: Double
         public let killAverage: Double
@@ -21,26 +21,26 @@ extension SN3Response.BattleHistories {
         public let win: Int
     }
     
-    public struct First: Codable, Hashable {
+    public struct First: Decodable {
         public let historyDetails: SN3NodesItem<Detail>
         
-        public struct Detail: Codable, Hashable {
+        public struct Detail: Decodable {
             public let id: SN3ID
             public let player: Player
             
-            public struct Player: Codable, Hashable {
+            public struct Player: Decodable {
                 public let id: SN3ID
                 public let weapon: Weapon
                 
-                public struct Weapon: Codable, Hashable {
+                public struct Weapon: Decodable {
                     public let id: SN3ID
                     public let specialWeapon: SpecialWeapon
                     
-                    public struct SpecialWeapon: Codable, Hashable {
+                    public struct SpecialWeapon: Decodable {
                         public let id: SN3ID
                         public let maskingImage: MaskingImage
                         
-                        public struct MaskingImage: Codable, Hashable {
+                        public struct MaskingImage: Decodable {
                             public let width: Int
                             public let height: Int
                             public let maskImageUrl: String
@@ -52,8 +52,7 @@ extension SN3Response.BattleHistories {
         }
     }
     
-    public struct Group: Codable, Hashable {
-        
+    public struct Group: Decodable {
         public let historyDetails: SN3NodesItem<Detail>
         /// nil for bankara battles
         public let lastPlayedTime: Date?
@@ -63,7 +62,7 @@ extension SN3Response.BattleHistories {
 
 extension SN3Response.BattleHistories.Group {
     
-    public struct BankaraChallenge: Codable, Hashable {
+    public struct BankaraChallenge: Decodable {
         public let winCount: Int
         public let loseCount: Int
         public let maxWinCount: Int
@@ -71,11 +70,11 @@ extension SN3Response.BattleHistories.Group {
         public let state: String
         public let isPromo: Bool
         public let isUdemaeUp: Bool?
-        public let udemaeAfter: Udemae?
+        public let udemaeAfter: String?
         public let earnedUdemaePoint: Int?
     }
     
-    public struct Detail: Codable, Hashable {
+    public struct Detail: Decodable {
         public let id: SN3ID
         public let vsMode: VSMode
         public let vsRule: SN3IDName
@@ -88,56 +87,29 @@ extension SN3Response.BattleHistories.Group {
         public let previousHistoryDetail: SN3JustID?
         
         /// for bankara only
-        public let udemae: Udemae?
+        public let udemae: String?
         /// for bankara only
         public let bankaraMatch: BankaraMatch?
         
-        public struct Player: Codable, Hashable {
-            
+        public struct Player: Decodable {
             public let id: SN3ID
             public let weapon: SN3IDNameImage
-            
             /// for fest match only
             public let festGrade: String?
         }
         
-        public struct MyTeam: Codable, Hashable {
+        public struct MyTeam: Decodable {
             public let result: TeamResult?
             
-            public struct TeamResult: Codable, Hashable {
+            public struct TeamResult: Decodable {
                 public let paintPoint: Int?
                 public let paintRatio: Double?
                 public let score: Int?
             }
         }
         
-        public struct BankaraMatch: Codable, Hashable {
+        public struct BankaraMatch: Decodable {
             public let earnedUdemaePoint: Int?
-        }
-    }
-}
-
-public struct Udemae: RawRepresentable, Codable, Hashable {
-    
-    public let rawValue: String
-    public init(rawValue: String) {
-        self.rawValue = rawValue
-    }
-    
-    public var sPlusNumber: Int? {
-        if rawValue.hasPrefix("S+") {
-            let num = Int(rawValue.dropFirst(2))
-            assert(num != nil)
-            return num
-        }
-        return nil
-    }
-    
-    public static func s(plus: Int? = nil) -> Udemae {
-        if let plus {
-            return Udemae(rawValue: "S+\(plus)")
-        } else {
-            return Udemae(rawValue: "S")
         }
     }
 }

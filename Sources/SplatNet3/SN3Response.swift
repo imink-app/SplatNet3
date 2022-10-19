@@ -1,6 +1,6 @@
 import Foundation
 
-public enum SN3Response: Codable, Hashable {
+public enum SN3Response: Decodable {
     case latestBattleHistories(SN3DataItem<BattleHistories>)
     case regularBattleHistories(SN3DataItem<BattleHistories>)
     case bankaraBattleHistories(SN3DataItem<BattleHistories>)

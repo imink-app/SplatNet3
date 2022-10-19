@@ -9,7 +9,7 @@ public struct SN3EmptyQueryParameter: Encodable {
     public func encode(to encoder: Encoder) throws {}
 }
 
-enum SN3Queries {
+public enum SN3Queries {
     
     public enum LatestBattleHistories: SN3Query {
         public static let response = \SN3Response.latestBattleHistories
@@ -40,7 +40,7 @@ enum SN3Queries {
         public static let response = \SN3Response.vsHistoryDetail
         public static let hash = "2b085984f729cd51938fc069ceef784a"
         
-        public struct Parameter: Codable {
+        public struct Parameter: Encodable {
             public let vsResultId: String
         }
     }
@@ -49,7 +49,7 @@ enum SN3Queries {
         public static let response = \SN3Response.coopHistoryDetail
         public static let hash = "f3799a033f0a7ad4b1b396f9a3bafb1e"
         
-        public struct Parameter: Codable {
+        public struct Parameter: Encodable {
             public let coopHistoryDetailId: String
         }
     }

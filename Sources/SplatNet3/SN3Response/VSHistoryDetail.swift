@@ -2,7 +2,7 @@ import Foundation
 
 extension SN3Response {
     
-    public struct VSHistoryDetail: Codable, Hashable {
+    public struct VSHistoryDetail: Decodable {
         public let __typename: String
         public let id: SN3ID
         public let playedTime: Date
@@ -30,11 +30,11 @@ extension SN3Response {
 
 extension SN3Response.VSHistoryDetail {
     
-    public struct Award: Codable, Hashable {
+    public struct Award: Decodable {
         public let name: String
         public let rank: Rank
         
-        public struct Rank: RawRepresentable, Codable, Hashable {
+        public struct Rank: RawRepresentable, Decodable {
             public let rawValue: String
             public init(rawValue: String) { self.rawValue = rawValue }
             
@@ -43,27 +43,27 @@ extension SN3Response.VSHistoryDetail {
         }
     }
     
-    public struct BankaraMatch: Codable, Hashable {
+    public struct BankaraMatch: Decodable {
         public let earnedUdemaePoint: Int?
         public let mode: Mode
         
-        public struct Mode: RawRepresentable, Codable, Hashable {
+        public struct Mode: RawRepresentable, Decodable {
             public let rawValue: String
             public init(rawValue: String) { self.rawValue = rawValue }
             
-            public static let challenge = Self(rawValue: "CHALLENGE")
             public static let open = Self(rawValue: "OPEN")
+            public static let challenge = Self(rawValue: "CHALLENGE")
         }
     }
     
-    public struct FestMatch: Codable, Hashable {
+    public struct FestMatch: Decodable {
         public let contribution: Int
         public let dragonMatchType: String
         public let jewel: Int
         public let myFestPower: Double
     }
     
-    public struct PlayerSelf: Codable, Hashable {
+    public struct PlayerSelf: Decodable {
         public let id: SN3ID
         public let name: String
         public let byname: String
@@ -76,7 +76,7 @@ extension SN3Response.VSHistoryDetail {
         public let __isPlayer: String
     }
     
-    public struct Team: Codable, Hashable {
+    public struct Team: Decodable {
         public let color: SN3Color
         public let festTeamName: String?
         public let judgement: VSJudgement
@@ -89,7 +89,7 @@ extension SN3Response.VSHistoryDetail {
 
 extension SN3Response.VSHistoryDetail.Team {
     
-    public struct Player: Codable, Hashable {
+    public struct Player: Decodable {
         public let id: SN3ID
         public let name: String
         public let nameId: String
@@ -109,14 +109,14 @@ extension SN3Response.VSHistoryDetail.Team {
         public let __typename: String
     }
     
-    public struct TeamResult: Codable, Hashable {
+    public struct TeamResult: Decodable {
         public let paintRatio: Double
         // TODO: ?
 //        public let score: Never?
 //        public let noroshi: Never?
     }
     
-    public struct TricolorRole: RawRepresentable, Codable, Hashable {
+    public struct TricolorRole: RawRepresentable, Decodable {
         public let rawValue: String
         public init(rawValue: String) { self.rawValue = rawValue }
         
@@ -129,7 +129,7 @@ extension SN3Response.VSHistoryDetail.Team {
 
 extension SN3Response.VSHistoryDetail.Team.Player {
     
-    public struct PlayerResult: Codable, Hashable {
+    public struct PlayerResult: Decodable {
         public let kill: Int
         public let assist: Int
         public let death: Int
@@ -138,7 +138,7 @@ extension SN3Response.VSHistoryDetail.Team.Player {
 //        public let noroshiTry: Never?
     }
     
-    public struct Weapon: Codable, Hashable {
+    public struct Weapon: Decodable {
         public let id: SN3ID
         public let name: String
         public let subWeapon: WeaponImage
@@ -149,7 +149,7 @@ extension SN3Response.VSHistoryDetail.Team.Player {
         public let image2DThumbnail: SN3Image
         public let image3DThumbnail: SN3Image
         
-        public struct WeaponImage: Codable, Hashable {
+        public struct WeaponImage: Decodable {
             public let id: SN3ID
             public let image: SN3Image
             public let name: String
@@ -157,16 +157,16 @@ extension SN3Response.VSHistoryDetail.Team.Player {
         }
     }
     
-    public struct FestDragonCert: RawRepresentable, Codable, Hashable {
+    public struct FestDragonCert: RawRepresentable, Decodable {
         public let rawValue: String
         public init(rawValue: String) { self.rawValue = rawValue }
         
-        public static let dragon = Self(rawValue: "DRAGON")
         public static let none = Self(rawValue: "NONE")
+        public static let dragon = Self(rawValue: "DRAGON")
     }
 }
 
-public struct VSGear: Codable, Hashable {
+public struct VSGear: Decodable {
     public let name: String
     public let brand: Brand
     public let image: SN3Image?
@@ -176,23 +176,23 @@ public struct VSGear: Codable, Hashable {
     public let additionalGearPowers: [SN3NameImage]
     public let __isGear: GearType
     
-    public struct GearType: RawRepresentable, Codable, Hashable {
+    public struct GearType: RawRepresentable, Decodable {
         public let rawValue: String
         public init(rawValue: String) { self.rawValue = rawValue }
         
-        public static let clothing = Self(rawValue: "ClothingGear")
         public static let head = Self(rawValue: "HeadGear")
+        public static let clothing = Self(rawValue: "ClothingGear")
         public static let shoes = Self(rawValue: "ShoesGear")
     }
     
-    public struct Brand: Codable, Hashable {
+    public struct Brand: Decodable {
         public let id: SN3ID
         public let name: String
         public let image: SN3Image
         public let maskingImage: SN3MaskingImage
         public let usualGearPower: UsualGearPower
         
-        public struct UsualGearPower: Codable, Hashable {
+        public struct UsualGearPower: Decodable {
             public let name: String
             public let image: SN3Image
             public let isEmptySlot: Bool

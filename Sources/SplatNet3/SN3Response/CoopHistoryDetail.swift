@@ -2,7 +2,7 @@ import Foundation
 
 extension SN3Response {
     
-    public struct CoopHistoryDetail: Codable, Hashable {
+    public struct CoopHistoryDetail: Decodable {
         public let __typename: String
         public let afterGrade: SN3IDName
         public let afterGradePoint: Int
@@ -33,19 +33,19 @@ extension SN3Response {
 
 extension SN3Response.CoopHistoryDetail {
     
-    public struct BossResult: Codable, Hashable {
+    public struct BossResult: Decodable {
         public let boss: SN3IDNameImage
         public let hasDefeatBoss: Bool
     }
     
-    public struct EnemyResult: Codable, Hashable {
+    public struct EnemyResult: Decodable {
         public let defeatCount: Int
         public let enemy: SN3IDNameImage
         public let popCount: Int
         public let teamDefeatCount: Int
     }
     
-    public struct MemberResult: Codable, Hashable {
+    public struct MemberResult: Decodable {
         public let defeatEnemyCount: Int
         public let deliverCount: Int
         public let goldenAssistCount: Int
@@ -57,23 +57,20 @@ extension SN3Response.CoopHistoryDetail {
         public let weapons: [SN3NameImage]
     }
     
-    public struct Rule: RawRepresentable, Codable, Hashable {
-        
+    public struct Rule: RawRepresentable, Decodable {
         public let rawValue: String
-        public init(rawValue: String) {
-            self.rawValue = rawValue
-        }
+        public init(rawValue: String) { self.rawValue = rawValue }
         
         public static let regular = Self(rawValue: "REGULAR")
     }
     
-    public struct Scale: Codable, Hashable {
+    public struct Scale: Decodable {
         public let bronze: Int
         public let gold: Int
         public let silver: Int
     }
     
-    public struct WaveResult: Codable, Hashable {
+    public struct WaveResult: Decodable {
         public let deliverNorm: Int?
         public let eventWave: SN3IDName?
         public let goldenPopCount: Int
@@ -86,7 +83,7 @@ extension SN3Response.CoopHistoryDetail {
 
 extension SN3Response.CoopHistoryDetail.MemberResult {
     
-    public struct Player: Codable, Hashable {
+    public struct Player: Decodable {
         public let __isPlayer: String
         public let byname: String
         public let id: String
