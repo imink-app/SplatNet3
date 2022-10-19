@@ -6,11 +6,11 @@ public struct SN3DataItem<Content: Decodable>: Decodable {
     public let data: Content
 }
 
-public struct SN3NodesItem<Node: Decodable>: Decodable {
+public struct SN3NodesList<Node: Decodable>: Decodable {
     public let nodes: [Node]
 }
 
-extension SN3NodesItem: RandomAccessCollection {
+extension SN3NodesList: RandomAccessCollection {
     public var startIndex: Int { nodes.startIndex }
     public var endIndex: Int { nodes.endIndex }
     public subscript(position: Int) -> Node { nodes[position] }

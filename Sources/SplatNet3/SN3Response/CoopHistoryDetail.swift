@@ -23,8 +23,7 @@ extension SN3Response {
         public let resultWave: Int
         public let rule: Rule
         public let scale: Scale?
-        // TODO: ?
-//        public let scenarioCode: Never?
+        public let scenarioCode: SN3Response.Unknown?
         public let smellMeter: Int
         public let waveResults: [WaveResult]
         public let weapons: [SN3NameImage]

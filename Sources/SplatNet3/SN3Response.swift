@@ -8,6 +8,9 @@ public enum SN3Response: Decodable {
     case coopHistory(SN3DataItem<CoopHistory>)
     case vsHistoryDetail(SN3DataItem<VSHistoryDetail>)
     case coopHistoryDetail(SN3DataItem<CoopHistoryDetail>)
+    
+    // placeholder for unknown structure
+    public struct Unknown: Decodable {}
 }
 
 extension SN3Response {

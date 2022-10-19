@@ -18,9 +18,8 @@ extension SN3Response {
         public let otherTeams: [Team]
         
         public let bankaraMatch: BankaraMatch?
-        // TODO: ?
-        //    public let leagueMatch: Never?
-        //    public let xMatch: Never?
+        public let leagueMatch: SN3Response.Unknown?
+        public let xMatch: SN3Response.Unknown?
         public let festMatch: FestMatch?
         
         public let previousHistoryDetail: SN3JustID?
@@ -61,6 +60,19 @@ extension SN3Response.VSHistoryDetail {
         public let dragonMatchType: String
         public let jewel: Int
         public let myFestPower: Double
+        
+        public struct DragonMatchType: RawRepresentable, Decodable {
+            public let rawValue: String
+            public init(rawValue: String) { self.rawValue = rawValue }
+            
+            public static let normal = Self(rawValue: "NORMAL")
+            /// 10x
+            public static let decuple = Self(rawValue: "DECUPLE")
+            /// 100x
+            public static let dragon = Self(rawValue: "DRAGON")
+            /// 333x
+            public static let doubleDragon = Self(rawValue: "DOUBLE_DRAGON")
+        }
     }
     
     public struct PlayerSelf: Decodable {
@@ -104,16 +116,15 @@ extension SN3Response.VSHistoryDetail.Team {
         public let headGear: VSGear
         public let clothingGear: VSGear
         public let shoesGear: VSGear
-        public let festDragonCert: String
+        public let festDragonCert: FestDragonCert
         public let __isPlayer: String
         public let __typename: String
     }
     
     public struct TeamResult: Decodable {
         public let paintRatio: Double
-        // TODO: ?
-//        public let score: Never?
-//        public let noroshi: Never?
+        public let score: Int?
+        public let noroshi: Int?
     }
     
     public struct TricolorRole: RawRepresentable, Decodable {
@@ -134,8 +145,7 @@ extension SN3Response.VSHistoryDetail.Team.Player {
         public let assist: Int
         public let death: Int
         public let special: Int
-        // TODO: ?
-//        public let noroshiTry: Never?
+        public let noroshiTry: Int?
     }
     
     public struct Weapon: Decodable {
@@ -162,7 +172,10 @@ extension SN3Response.VSHistoryDetail.Team.Player {
         public init(rawValue: String) { self.rawValue = rawValue }
         
         public static let none = Self(rawValue: "NONE")
+        /// 100x
         public static let dragon = Self(rawValue: "DRAGON")
+        /// 333x
+        public static let doubleDragon = Self(rawValue: "DOUBLE_DRAGON")
     }
 }
 

@@ -3,21 +3,21 @@ import Foundation
 extension SN3Response {
     
     public struct CoopHistory: Decodable {
-        public let historyGroupsOnlyFirst: SN3NodesItem<First>
+        public let historyGroupsOnlyFirst: SN3NodesList<First>
         public let regularAverageClearWave: Double
         public let regularGrade: SN3IDName
         public let regularGradePoint: Int
         public let monthlyGear: MonthlyGear
         public let scale: Scale
         public let pointCard: PointCard
-        public let historyGroups: SN3NodesItem<Group>
+        public let historyGroups: SN3NodesList<Group>
     }
 }
 
 extension SN3Response.CoopHistory {
     
     public struct First: Decodable {
-        public let historyDetails: SN3NodesItem<SN3JustID>
+        public let historyDetails: SN3NodesList<SN3JustID>
     }
     
     public struct MonthlyGear: Decodable {
@@ -48,7 +48,7 @@ extension SN3Response.CoopHistory {
         public let mode: String
         public let rule: String
         public let highestResult: HighestResult
-        public let historyDetails: SN3NodesItem<Detail>
+        public let historyDetails: SN3NodesList<Detail>
     }
 }
 

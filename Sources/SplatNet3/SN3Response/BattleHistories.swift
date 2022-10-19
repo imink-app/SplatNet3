@@ -4,8 +4,8 @@ extension SN3Response {
     
     public struct BattleHistories: Decodable {
         public let summary: Summary
-        public let historyGroupsOnlyFirst: SN3NodesItem<First>
-        public let historyGroups: SN3NodesItem<Group>
+        public let historyGroupsOnlyFirst: SN3NodesList<First>
+        public let historyGroups: SN3NodesList<Group>
     }
 }
 
@@ -22,7 +22,7 @@ extension SN3Response.BattleHistories {
     }
     
     public struct First: Decodable {
-        public let historyDetails: SN3NodesItem<Detail>
+        public let historyDetails: SN3NodesList<Detail>
         
         public struct Detail: Decodable {
             public let id: SN3ID
@@ -53,7 +53,7 @@ extension SN3Response.BattleHistories {
     }
     
     public struct Group: Decodable {
-        public let historyDetails: SN3NodesItem<Detail>
+        public let historyDetails: SN3NodesList<Detail>
         /// nil for bankara battles
         public let lastPlayedTime: Date?
         public let bankaraMatchChallenge: BankaraChallenge?
