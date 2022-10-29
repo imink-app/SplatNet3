@@ -1,33 +1,30 @@
 import Foundation
 
-extension SN3Response {
+public struct VSHistoryDetail: Decodable {
+    public let __typename: String
+    public let id: SN3ID
+    public let playedTime: SN3Date
+    public let duration: Int
+    public let vsMode: VSMode
+    public let vsRule: VSRule
+    public let vsStage: SN3IDNameImage
+    public let judgement: VSJudgement
+    public let knockout: VSKnockout
+    public let player: PlayerSelf
+    public let awards: [Award]
+    public let myTeam: Team
+    public let otherTeams: [Team]
     
-    public struct VSHistoryDetail: Decodable {
-        public let __typename: String
-        public let id: SN3ID
-        public let playedTime: Date
-        public let duration: Int
-        public let vsMode: VSMode
-        public let vsRule: VSRule
-        public let vsStage: SN3IDNameImage
-        public let judgement: VSJudgement
-        public let knockout: VSKnockout
-        public let player: PlayerSelf
-        public let awards: [Award]
-        public let myTeam: Team
-        public let otherTeams: [Team]
-        
-        public let bankaraMatch: BankaraMatch?
-        public let leagueMatch: SN3Response.Unknown?
-        public let xMatch: SN3Response.Unknown?
-        public let festMatch: FestMatch?
-        
-        public let previousHistoryDetail: SN3JustID?
-        public let nextHistoryDetail: SN3JustID?
-    }
+    public let bankaraMatch: BankaraMatch?
+    public let leagueMatch: SN3Unknown?
+    public let xMatch: SN3Unknown?
+    public let festMatch: FestMatch?
+    
+    public let previousHistoryDetail: SN3JustID?
+    public let nextHistoryDetail: SN3JustID?
 }
 
-extension SN3Response.VSHistoryDetail {
+extension VSHistoryDetail {
     
     public struct Award: Decodable {
         public let name: String
@@ -99,7 +96,7 @@ extension SN3Response.VSHistoryDetail {
     }
 }
 
-extension SN3Response.VSHistoryDetail.Team {
+extension VSHistoryDetail.Team {
     
     public struct Player: Decodable {
         public let id: SN3ID
@@ -122,7 +119,7 @@ extension SN3Response.VSHistoryDetail.Team {
     }
     
     public struct TeamResult: Decodable {
-        public let paintRatio: Double
+        public let paintRatio: Double?
         public let score: Int?
         public let noroshi: Int?
     }
@@ -138,7 +135,7 @@ extension SN3Response.VSHistoryDetail.Team {
 }
 
 
-extension SN3Response.VSHistoryDetail.Team.Player {
+extension VSHistoryDetail.Team.Player {
     
     public struct PlayerResult: Decodable {
         public let kill: Int
@@ -154,16 +151,16 @@ extension SN3Response.VSHistoryDetail.Team.Player {
         public let subWeapon: WeaponImage
         public let specialWeapon: WeaponImage
         public let image: SN3Image
-        public let image2D: SN3Image
-        public let image3D: SN3Image
-        public let image2DThumbnail: SN3Image
-        public let image3DThumbnail: SN3Image
+        public let image2D: SN3Image?
+        public let image3D: SN3Image?
+        public let image2DThumbnail: SN3Image?
+        public let image3DThumbnail: SN3Image?
         
         public struct WeaponImage: Decodable {
             public let id: SN3ID
             public let image: SN3Image
             public let name: String
-            public let maskingImage: SN3MaskingImage
+            public let maskingImage: SN3MaskingImage?
         }
     }
     
@@ -184,7 +181,7 @@ public struct VSGear: Decodable {
     public let brand: Brand
     public let image: SN3Image?
     public let originalImage: SN3Image
-    public let thumbnailImage: SN3Image
+    public let thumbnailImage: SN3Image?
     public let primaryGearPower: SN3NameImage
     public let additionalGearPowers: [SN3NameImage]
     public let __isGear: GearType
@@ -202,7 +199,7 @@ public struct VSGear: Decodable {
         public let id: SN3ID
         public let name: String
         public let image: SN3Image
-        public let maskingImage: SN3MaskingImage
+        public let maskingImage: SN3MaskingImage?
         public let usualGearPower: UsualGearPower
         
         public struct UsualGearPower: Decodable {

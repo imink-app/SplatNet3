@@ -1,66 +1,37 @@
 import Foundation
 
-public enum SN3Response: Decodable {
-    case latestBattleHistories(SN3DataItem<BattleHistories>)
-    case regularBattleHistories(SN3DataItem<BattleHistories>)
-    case bankaraBattleHistories(SN3DataItem<BattleHistories>)
-    case privateBattleHistories(SN3DataItem<BattleHistories>)
-    case coopHistory(SN3DataItem<CoopHistory>)
-    case vsHistoryDetail(SN3DataItem<VSHistoryDetail>)
-    case coopHistoryDetail(SN3DataItem<CoopHistoryDetail>)
-    
-    // placeholder for unknown structure
-    public struct Unknown: Decodable {}
+public struct SN3Response<Content: Decodable>: Decodable {
+    public let data: Content
 }
 
-extension SN3Response {
-    
-    public var latestBattleHistories: BattleHistories? {
-        if case .latestBattleHistories(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var regularBattleHistories: BattleHistories? {
-        if case .regularBattleHistories(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var bankaraBattleHistories: BattleHistories? {
-        if case .bankaraBattleHistories(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var privateBattleHistories: BattleHistories? {
-        if case .privateBattleHistories(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var coopHistory: CoopHistory? {
-        if case .coopHistory(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var vsHistoryDetail: VSHistoryDetail? {
-        if case .vsHistoryDetail(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
-    
-    public var coopHistoryDetail: CoopHistoryDetail? {
-        if case .coopHistoryDetail(let resp) = self {
-            return resp.data
-        }
-        return nil
-    }
+// placeholder for unknown structure
+public struct SN3Unknown: Decodable {}
+
+public struct SN3LatestBattleHistoriesData: Decodable {
+    let currentFest: SN3Unknown?
+    public let latestBattleHistories: BattleHistories
+}
+
+public struct SN3RegularBattleHistoriesData: Decodable {
+    public let regularBattleHistories: BattleHistories
+}
+
+public struct SN3BankaraBattleHistoriesData: Decodable {
+    public let bankaraBattleHistories: BattleHistories
+}
+
+public struct SN3PrivateBattleHistoriesData: Decodable {
+    public let privateBattleHistories: BattleHistories
+}
+
+public struct SN3VSHistoryDetailData: Decodable {
+    public let vsHistoryDetail: VSHistoryDetail
+}
+
+public struct SN3CoopHistoryData: Decodable {
+    public let coopResult: CoopHistory
+}
+
+public struct SN3CoopHistoryDetailData: Decodable {
+    public let coopHistoryDetail: CoopHistoryDetail
 }

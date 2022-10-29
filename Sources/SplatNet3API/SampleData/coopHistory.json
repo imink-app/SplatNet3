@@ -1,0 +1,301 @@
+{
+    "data": {
+        "coopResult": {
+            "historyGroupsOnlyFirst": {
+                "nodes": [
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNTAyNTFfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "regularAverageClearWave": 3.0,
+            "regularGrade": {
+                "name": "Part-Timer",
+                "id": "Q29vcEdyYWRlLTE="
+            },
+            "regularGradePoint": 40,
+            "monthlyGear": {
+                "__typename": "HeadGear",
+                "name": "Lo-Vis Visor",
+                "image": {
+                    "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/gear_img/a1a46259ea6e22f607a80e995e688c32bdacd2fc77991b35fa0dcdf394c4852e_0.png?Expires=1673308800\u0026Signature=dxfaNlnpw~LthIPvlUzvNSxweCG5hexGnIZixF9xgLViOwRXk5rKP1U9blqPI5NE2lQoNCmQK3j~8y1yP-gSe~Cye7OWD1YSHspaD~XO8YlIWeShT1ew7~foELHMzrYcOcJwIWSOAYWjVGS71KxE-l7DGprFplXc3mUoqAJ8aQY9qdJ6UYmGL4gMiHjRd~jiHWAo2T09YU~UXZ8AkPwCNTag67oqvr~7tijZ2esUBgnXtVoQ5UzqgLpbwwIDSkffpGPnIbnN-uEmFiyNSzQ13XifDpWomoBV7WIyXn5xOQOfr6eygzNXoJy2Gb9WvavtKPKrr~~oqTSZrbv9CwweMQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                }
+            },
+            "scale": {
+                "gold": 1,
+                "silver": 0,
+                "bronze": 8
+            },
+            "pointCard": {
+                "defeatBossCount": 0,
+                "deliverCount": 6457,
+                "goldenDeliverCount": 141,
+                "playCount": 3,
+                "rescueCount": 2,
+                "regularPoint": 466,
+                "totalPoint": 466
+            },
+            "historyGroups": {
+                "nodes": [
+                    {
+                        "startTime": "2022-10-03T08:00:00Z",
+                        "endTime": "2022-10-05T00:00:00Z",
+                        "mode": "REGULAR",
+                        "rule": "REGULAR",
+                        "highestResult": {
+                            "grade": {
+                                "name": "Part-Timer",
+                                "id": "Q29vcEdyYWRlLTE="
+                            },
+                            "gradePoint": 40,
+                            "jobScore": 51
+                        },
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNTAyNTFfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh",
+                                    "weapons": [
+                                        {
+                                            "name": "Luna Blaster",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/10d4a1584d1428cb164ddfbc5febc9b1e77fd05e2e9ed9de851838a94d202c15_0.png?Expires=1673308800\u0026Signature=U1jb7dHVPOBvslnujUK5lBRtVWyX4YCQ6MZC-TpSNBQ7m-vXd-wcWODYr9rZ6qowAz9qWl3lLlqOek3vur06PpDDg1bwxxICaJ7kTOqiRUlvysD9E3ViRCuJugNDyk-364x--PeGRCQnnilooK7NuY0GRuZ2vgNj1rRYVd1HCFScdf2d8eGzjWgtwJsaUsqC8OA4BO3eWbAhuD8EvxA6vR-M3lXRajMwbvX1r3SNBhPqcYlMAXFXhKK~tyYL198GjApOmgNaK6XW2MmXTr9ZQclnRtZbwKWUdeBNo3WAWHsmcNNGqIFanUrpOvVd~snA~qTRkssya~EXE6k4DRvZPQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "L-3 Nozzlenose",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/96833fc0f74242cd2bc73b241aab8a00d499ce9f6557722ef6503e12af8979f4_0.png?Expires=1673308800\u0026Signature=YUc73gZCX~HFM7OuEgn4lvVKTAt0~ySNULyzkFA6DcC7SWr2V6vXYRfKmi38zGrQ8DJUevzw530F9wJSkjQrvCyxG3AsQIztyScLYcA2XlEmcqLsonY8iCI-mv0OQDX3IlAAvlaAZD5mT6PjQXkAFvXWYZxZCj7SwaPPLuiilpOMTarRZ5tK6C~WWexAvgMicki1KtpXkodFyToJiB2xJOrGjeDsLvmeJTi~~S3ujA2-8bSz1Zv7UDG191QDmqgVsD20gXZLVdVT8Jwr2lv6hcb-arEekf3Re4NNVc3pACeb4rNnBNgF9IuBFwxF~rrIok99cmg8hWgNo8kj1tDhAg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Ballpoint Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/206dbf3b5dfc9962b6a783acf68a856f0c8fbf0c56257c2ca5c25d63198dd6e1_0.png?Expires=1673308800\u0026Signature=OFPCSaAIfQHHUGFwr3AVFOgqQcoHWRa-nvP--nvfEH96oEYrGgBJdcam3K8mTnVvg4wqdjnpsAK26NqcFmRPJJnrct6Ux9fAHNWooWJ5Jdb8LT6ArDC31CDdjR460DElBtw9RRM92HsOs2zOzOzJQLO5nTHcePjTLRsFBzBB8uq2PsFdg8tvyjBZ2JWMqJT~-zh0P1MK7DLAAxdi8NL0q0C4xWJymqBP0OtJvdLO79w2DH737akAjDEFc5bEMWimC4OynLJZtz8c6JuCJEjs9aa4092jRL3VQ0Q5yqBBhb-aQUQcKtKE2j-7Ybigm5Z2iXt~12uYDLiX66oJt8JLzw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Rapid Blaster Pro",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/954a5ea059f841fa5f1cd2596bb32f23b3d3b03fc3fa7972077bdbafe6051215_0.png?Expires=1673308800\u0026Signature=HfHRhxetjB4U8BXoHnOsUxIupH2Bevm1bClr9KKE-vt4nZIICchUak7z4sNGaAQm-mNCBnIuhzmo4PHrCV5eq7AypZ9kASQYZCsO4kb7iaf1Kn6GnZZFx594RVi-IlPMZ7wi9VdKnJyTFYDYLGxDYZTX9hiqgdJN8EUrgAIDivXckLmWqNZi~KHQ445CzLgin2iNif-GSkFBX2R3Lwar~ZJfRdq9gyhQonOORb8BK7BUQGj65ser8NJ9VUJMVTsn~bt-AM0uLd8IhCFqJvgB5Cby0r6K8XEn8okLqVrtkqqG~Nm-0XbeGZ5XkzVxiURSLZYVz4OPimjIJ~IVfPcacg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        }
+                                    ],
+                                    "nextHistoryDetail": null,
+                                    "previousHistoryDetail": {
+                                        "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNDU1NDdfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh"
+                                    },
+                                    "resultWave": 0,
+                                    "coopStage": {
+                                        "name": "Sockeye Station",
+                                        "id": "Q29vcFN0YWdlLTI="
+                                    },
+                                    "afterGrade": {
+                                        "name": "Part-Timer",
+                                        "id": "Q29vcEdyYWRlLTE="
+                                    },
+                                    "afterGradePoint": 40,
+                                    "gradePointDiff": "UP",
+                                    "bossResult": {
+                                        "hasDefeatBoss": false,
+                                        "boss": {
+                                            "name": "Cohozuna",
+                                            "id": "Q29vcEVuZW15LTIz"
+                                        }
+                                    },
+                                    "myResult": {
+                                        "deliverCount": 582,
+                                        "goldenDeliverCount": 14
+                                    },
+                                    "memberResults": [
+                                        {
+                                            "deliverCount": 590,
+                                            "goldenDeliverCount": 8
+                                        },
+                                        {
+                                            "deliverCount": 451,
+                                            "goldenDeliverCount": 14
+                                        },
+                                        {
+                                            "deliverCount": 884,
+                                            "goldenDeliverCount": 10
+                                        }
+                                    ],
+                                    "waveResults": [
+                                        {
+                                            "waveNumber": 1
+                                        },
+                                        {
+                                            "waveNumber": 2
+                                        },
+                                        {
+                                            "waveNumber": 3
+                                        },
+                                        {
+                                            "waveNumber": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNDU1NDdfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh",
+                                    "weapons": [
+                                        {
+                                            "name": "Luna Blaster",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/10d4a1584d1428cb164ddfbc5febc9b1e77fd05e2e9ed9de851838a94d202c15_0.png?Expires=1673308800\u0026Signature=U1jb7dHVPOBvslnujUK5lBRtVWyX4YCQ6MZC-TpSNBQ7m-vXd-wcWODYr9rZ6qowAz9qWl3lLlqOek3vur06PpDDg1bwxxICaJ7kTOqiRUlvysD9E3ViRCuJugNDyk-364x--PeGRCQnnilooK7NuY0GRuZ2vgNj1rRYVd1HCFScdf2d8eGzjWgtwJsaUsqC8OA4BO3eWbAhuD8EvxA6vR-M3lXRajMwbvX1r3SNBhPqcYlMAXFXhKK~tyYL198GjApOmgNaK6XW2MmXTr9ZQclnRtZbwKWUdeBNo3WAWHsmcNNGqIFanUrpOvVd~snA~qTRkssya~EXE6k4DRvZPQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "L-3 Nozzlenose",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/96833fc0f74242cd2bc73b241aab8a00d499ce9f6557722ef6503e12af8979f4_0.png?Expires=1673308800\u0026Signature=YUc73gZCX~HFM7OuEgn4lvVKTAt0~ySNULyzkFA6DcC7SWr2V6vXYRfKmi38zGrQ8DJUevzw530F9wJSkjQrvCyxG3AsQIztyScLYcA2XlEmcqLsonY8iCI-mv0OQDX3IlAAvlaAZD5mT6PjQXkAFvXWYZxZCj7SwaPPLuiilpOMTarRZ5tK6C~WWexAvgMicki1KtpXkodFyToJiB2xJOrGjeDsLvmeJTi~~S3ujA2-8bSz1Zv7UDG191QDmqgVsD20gXZLVdVT8Jwr2lv6hcb-arEekf3Re4NNVc3pACeb4rNnBNgF9IuBFwxF~rrIok99cmg8hWgNo8kj1tDhAg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Ballpoint Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/206dbf3b5dfc9962b6a783acf68a856f0c8fbf0c56257c2ca5c25d63198dd6e1_0.png?Expires=1673308800\u0026Signature=OFPCSaAIfQHHUGFwr3AVFOgqQcoHWRa-nvP--nvfEH96oEYrGgBJdcam3K8mTnVvg4wqdjnpsAK26NqcFmRPJJnrct6Ux9fAHNWooWJ5Jdb8LT6ArDC31CDdjR460DElBtw9RRM92HsOs2zOzOzJQLO5nTHcePjTLRsFBzBB8uq2PsFdg8tvyjBZ2JWMqJT~-zh0P1MK7DLAAxdi8NL0q0C4xWJymqBP0OtJvdLO79w2DH737akAjDEFc5bEMWimC4OynLJZtz8c6JuCJEjs9aa4092jRL3VQ0Q5yqBBhb-aQUQcKtKE2j-7Ybigm5Z2iXt~12uYDLiX66oJt8JLzw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Rapid Blaster Pro",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/954a5ea059f841fa5f1cd2596bb32f23b3d3b03fc3fa7972077bdbafe6051215_0.png?Expires=1673308800\u0026Signature=HfHRhxetjB4U8BXoHnOsUxIupH2Bevm1bClr9KKE-vt4nZIICchUak7z4sNGaAQm-mNCBnIuhzmo4PHrCV5eq7AypZ9kASQYZCsO4kb7iaf1Kn6GnZZFx594RVi-IlPMZ7wi9VdKnJyTFYDYLGxDYZTX9hiqgdJN8EUrgAIDivXckLmWqNZi~KHQ445CzLgin2iNif-GSkFBX2R3Lwar~ZJfRdq9gyhQonOORb8BK7BUQGj65ser8NJ9VUJMVTsn~bt-AM0uLd8IhCFqJvgB5Cby0r6K8XEn8okLqVrtkqqG~Nm-0XbeGZ5XkzVxiURSLZYVz4OPimjIJ~IVfPcacg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        }
+                                    ],
+                                    "nextHistoryDetail": {
+                                        "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNTAyNTFfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh"
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNDQ4MDlfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh"
+                                    },
+                                    "resultWave": 0,
+                                    "coopStage": {
+                                        "name": "Sockeye Station",
+                                        "id": "Q29vcFN0YWdlLTI="
+                                    },
+                                    "afterGrade": {
+                                        "name": "Apprentice",
+                                        "id": "Q29vcEdyYWRlLTA="
+                                    },
+                                    "afterGradePoint": 80,
+                                    "gradePointDiff": "UP",
+                                    "bossResult": null,
+                                    "myResult": {
+                                        "deliverCount": 344,
+                                        "goldenDeliverCount": 14
+                                    },
+                                    "memberResults": [
+                                        {
+                                            "deliverCount": 346,
+                                            "goldenDeliverCount": 10
+                                        },
+                                        {
+                                            "deliverCount": 334,
+                                            "goldenDeliverCount": 15
+                                        },
+                                        {
+                                            "deliverCount": 553,
+                                            "goldenDeliverCount": 12
+                                        }
+                                    ],
+                                    "waveResults": [
+                                        {
+                                            "waveNumber": 1
+                                        },
+                                        {
+                                            "waveNumber": 2
+                                        },
+                                        {
+                                            "waveNumber": 3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNDQ4MDlfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh",
+                                    "weapons": [
+                                        {
+                                            "name": "Luna Blaster",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/10d4a1584d1428cb164ddfbc5febc9b1e77fd05e2e9ed9de851838a94d202c15_0.png?Expires=1673308800\u0026Signature=U1jb7dHVPOBvslnujUK5lBRtVWyX4YCQ6MZC-TpSNBQ7m-vXd-wcWODYr9rZ6qowAz9qWl3lLlqOek3vur06PpDDg1bwxxICaJ7kTOqiRUlvysD9E3ViRCuJugNDyk-364x--PeGRCQnnilooK7NuY0GRuZ2vgNj1rRYVd1HCFScdf2d8eGzjWgtwJsaUsqC8OA4BO3eWbAhuD8EvxA6vR-M3lXRajMwbvX1r3SNBhPqcYlMAXFXhKK~tyYL198GjApOmgNaK6XW2MmXTr9ZQclnRtZbwKWUdeBNo3WAWHsmcNNGqIFanUrpOvVd~snA~qTRkssya~EXE6k4DRvZPQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "L-3 Nozzlenose",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/96833fc0f74242cd2bc73b241aab8a00d499ce9f6557722ef6503e12af8979f4_0.png?Expires=1673308800\u0026Signature=YUc73gZCX~HFM7OuEgn4lvVKTAt0~ySNULyzkFA6DcC7SWr2V6vXYRfKmi38zGrQ8DJUevzw530F9wJSkjQrvCyxG3AsQIztyScLYcA2XlEmcqLsonY8iCI-mv0OQDX3IlAAvlaAZD5mT6PjQXkAFvXWYZxZCj7SwaPPLuiilpOMTarRZ5tK6C~WWexAvgMicki1KtpXkodFyToJiB2xJOrGjeDsLvmeJTi~~S3ujA2-8bSz1Zv7UDG191QDmqgVsD20gXZLVdVT8Jwr2lv6hcb-arEekf3Re4NNVc3pACeb4rNnBNgF9IuBFwxF~rrIok99cmg8hWgNo8kj1tDhAg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Ballpoint Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/206dbf3b5dfc9962b6a783acf68a856f0c8fbf0c56257c2ca5c25d63198dd6e1_0.png?Expires=1673308800\u0026Signature=OFPCSaAIfQHHUGFwr3AVFOgqQcoHWRa-nvP--nvfEH96oEYrGgBJdcam3K8mTnVvg4wqdjnpsAK26NqcFmRPJJnrct6Ux9fAHNWooWJ5Jdb8LT6ArDC31CDdjR460DElBtw9RRM92HsOs2zOzOzJQLO5nTHcePjTLRsFBzBB8uq2PsFdg8tvyjBZ2JWMqJT~-zh0P1MK7DLAAxdi8NL0q0C4xWJymqBP0OtJvdLO79w2DH737akAjDEFc5bEMWimC4OynLJZtz8c6JuCJEjs9aa4092jRL3VQ0Q5yqBBhb-aQUQcKtKE2j-7Ybigm5Z2iXt~12uYDLiX66oJt8JLzw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        },
+                                        {
+                                            "name": "Rapid Blaster Pro",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/954a5ea059f841fa5f1cd2596bb32f23b3d3b03fc3fa7972077bdbafe6051215_0.png?Expires=1673308800\u0026Signature=HfHRhxetjB4U8BXoHnOsUxIupH2Bevm1bClr9KKE-vt4nZIICchUak7z4sNGaAQm-mNCBnIuhzmo4PHrCV5eq7AypZ9kASQYZCsO4kb7iaf1Kn6GnZZFx594RVi-IlPMZ7wi9VdKnJyTFYDYLGxDYZTX9hiqgdJN8EUrgAIDivXckLmWqNZi~KHQ445CzLgin2iNif-GSkFBX2R3Lwar~ZJfRdq9gyhQonOORb8BK7BUQGj65ser8NJ9VUJMVTsn~bt-AM0uLd8IhCFqJvgB5Cby0r6K8XEn8okLqVrtkqqG~Nm-0XbeGZ5XkzVxiURSLZYVz4OPimjIJ~IVfPcacg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            }
+                                        }
+                                    ],
+                                    "nextHistoryDetail": {
+                                        "id": "Q29vcEhpc3RvcnlEZXRhaWwtdS1xc3FpcHl5aWVsamxteTRndHJtbToyMDIyMTAwNFQxNDU1NDdfNGNlYWVjZGMtYzQxOS00YzM3LTg3MjgtMmZlN2IzMTQxZmZh"
+                                    },
+                                    "previousHistoryDetail": null,
+                                    "resultWave": 0,
+                                    "coopStage": {
+                                        "name": "Sockeye Station",
+                                        "id": "Q29vcFN0YWdlLTI="
+                                    },
+                                    "afterGrade": {
+                                        "name": "Apprentice",
+                                        "id": "Q29vcEdyYWRlLTA="
+                                    },
+                                    "afterGradePoint": 60,
+                                    "gradePointDiff": "UP",
+                                    "bossResult": null,
+                                    "myResult": {
+                                        "deliverCount": 782,
+                                        "goldenDeliverCount": 12
+                                    },
+                                    "memberResults": [
+                                        {
+                                            "deliverCount": 676,
+                                            "goldenDeliverCount": 12
+                                        },
+                                        {
+                                            "deliverCount": 530,
+                                            "goldenDeliverCount": 12
+                                        },
+                                        {
+                                            "deliverCount": 385,
+                                            "goldenDeliverCount": 8
+                                        }
+                                    ],
+                                    "waveResults": [
+                                        {
+                                            "waveNumber": 1
+                                        },
+                                        {
+                                            "waveNumber": 2
+                                        },
+                                        {
+                                            "waveNumber": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

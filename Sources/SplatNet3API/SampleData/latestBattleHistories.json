@@ -1,0 +1,1662 @@
+{
+    "data": {
+        "latestBattleHistories": {
+            "summary": {
+                "assistAverage": 0.5256905256905258,
+                "deathAverage": 0.989010989010989,
+                "killAverage": 2.2364122364122365,
+                "lose": 17,
+                "perUnitTimeMinute": 1,
+                "specialAverage": 0.7484407484407485,
+                "win": 17
+            },
+            "historyGroupsOnlyFirst": {
+                "nodes": [
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "player": {
+                                        "weapon": {
+                                            "specialWeapon": {
+                                                "maskingImage": {
+                                                    "width": 100,
+                                                    "height": 100,
+                                                    "maskImageUrl": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/special_img/mask/bd327d1b64372dedefd32adb28bea62a5b6152d93aada5d9fc4f669a1955d6d4_4.png?Expires=1673308800\u0026Signature=Z5jQU~SrNTgJhCoW6s~qewgtsW9G-H-BncbCaFgRZ-5kyqzwSxe~fz-jkxoxeOCKDSII9859yf7pDRZKJBcHGHJbuXBoClaBQv7jKJuh~lGQsWQPQDL80eySlp1LG3I~qBOFgdhzJ6ciPH2A5TIpFhbrdl-7-4rWjNNkOI2X4VmQ5NogjPbdX3QWJaTXWcikKroG0cz~FH7HuQZRhpUSjORgmiBflTsTy9QAoWh0PciH7CW9zhgUf~c9ZRs~i3mf5MDNNChv3DJ5yz2-tK3NFvhRKwgRps7rLF49nDzIDkAGPIFekeMTMQrV65o4-XMgXw8FXcMA2R8HiX2FFTNisA__\u0026Key-Pair-Id=KNBS2THMRC385",
+                                                    "overlayImageUrl": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/special_img/overlay/bd327d1b64372dedefd32adb28bea62a5b6152d93aada5d9fc4f669a1955d6d4_5.png?Expires=1673308800\u0026Signature=snlN71fJSgzolgF9R4sipldVv3wEklKmA5NNoihR8b~ISMGRx9FjoiRPbXpGHQgMJAIC-7Sf4vRE3AABZ0ppAB6U2FM0FR1iMKt5t4RYF46J7qy4LtqISZLN9Ti2dETuyq4MdLdRmraarO~s09J4o9s25kVoOxSWFsYJeJCsXazlfGjGOv47-3gN9NGGCZwg-lW9TkrDTb8BfvmFDkeFBo6xRVVtkwq7mo7a7KD-bnlklp8EWQmdKBUCofZ9cQiTBoa49gza6rDZaUZeyTS8kDt-UYi~UyjENs67dXVgT91Foo-VOKrwm9r3bLMQAkzd3MiFkXzhn3VTdMNX0~R9rQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                                },
+                                                "id": "U3BlY2lhbFdlYXBvbi02"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDdUMDkyMDE0XzE5NzE4ZTI5LWY0OGUtNDdlMy04YTA1LTk3ZjVmMDdlZWI1Mjp1LXFzcWlweXlpZWxqbG15NGd0cm1t"
+                                    },
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA3VDA5MjAxNF8xOTcxOGUyOS1mNDhlLTQ3ZTMtOGEwNS05N2Y1ZjA3ZWViNTI="
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "historyGroups": {
+                "nodes": [
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA3VDA5MjAxNF8xOTcxOGUyOS1mNDhlLTQ3ZTMtOGEwNS05N2Y1ZjA3ZWViNTI=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Mincemeat Metalworks",
+                                        "id": "VnNTdGFnZS02",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/de1f212e9ff0648f36cd3b8e0917ef36b3bd51445159297dcb948f34a09f2f05_3.png?Expires=1673308800\u0026Signature=AjXAbtuRslIkEIb2MKY83yzUNbKjQWNeZvDLP2fD~Gt-5Zxwu4yfj8f7IB8kU4lcBEaMDqqdtV8YYfaXFQP8UmMnHV7KK4Ctsq~wbpkFWtbIPLMtIMz2GyCfSfINqfNQF577So9HtVcndEdf6P3UACPWBTBFgmbe97kd-HAL~igicpXFC5hfmJtZmmRmmPlyM26kL6zBQIgUsHIi~l87NDIoRLgfH~WLU4u2szWDcuKBgQrNqTWgmbR6d0-ZuUUVN-XFxlnUm82u8O~J5ae~HGGl0gpsykth1F6Z5K2yB6XGy2bca0G6zvhtg8foWX7N9LqSFmzmTK61s3-Dgh2h-w__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDdUMDkyMDE0XzE5NzE4ZTI5LWY0OGUtNDdlMy04YTA1LTk3ZjVmMDdlZWI1Mjp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1222,
+                                            "paintRatio": 0.559,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": null,
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NTUzMV9jZTQ3NzZhNi1hYmFmLTQ1NzgtODU2ZC1mOWU2ZjQzZGRmNDg="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NTUzMV9jZTQ3NzZhNi1hYmFmLTQ1NzgtODU2ZC1mOWU2ZjQzZGRmNDg=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTU1NTMxX2NlNDc3NmE2LWFiYWYtNDU3OC04NTZkLWY5ZTZmNDNkZGY0ODp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 89
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": 8
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA3VDA5MjAxNF8xOTcxOGUyOS1mNDhlLTQ3ZTMtOGEwNS05N2Y1ZjA3ZWViNTI="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NDM0N185MmI4OWNhNS04M2VjLTQ5MGEtOWRkNC01YzIyNjdlOTA5MjU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NDM0N185MmI4OWNhNS04M2VjLTQ5MGEtOWRkNC01YzIyNjdlOTA5MjU=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTU0MzQ3XzkyYjg5Y2E1LTgzZWMtNDkwYS05ZGQ0LTVjMjI2N2U5MDkyNTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 87
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": 8
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NTUzMV9jZTQ3NzZhNi1hYmFmLTQ1NzgtODU2ZC1mOWU2ZjQzZGRmNDg="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1Mzg1OV80NDdhNjNkMy01Mzc1LTRlZmUtOGJiZC0xMDQyM2E4ODY4NDY="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1Mzg1OV80NDdhNjNkMy01Mzc1LTRlZmUtOGJiZC0xMDQyM2E4ODY4NDY=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTUzODU5XzQ0N2E2M2QzLTUzNzUtNGVmZS04YmJkLTEwNDIzYTg4Njg0Njp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1NDM0N185MmI4OWNhNS04M2VjLTQ5MGEtOWRkNC01YzIyNjdlOTA5MjU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MzEyM19mNjdkMGFkOS00ZGMwLTRjZTYtOTk5Zi01ODYxN2ZlNDg5MmE="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MzEyM19mNjdkMGFkOS00ZGMwLTRjZTYtOTk5Zi01ODYxN2ZlNDg5MmE=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Eeltail Alley",
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800\u0026Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTUzMTIzX2Y2N2QwYWQ5LTRkYzAtNGNlNi05OTlmLTU4NjE3ZmU0ODkyYTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 38
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": 8
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1Mzg1OV80NDdhNjNkMy01Mzc1LTRlZmUtOGJiZC0xMDQyM2E4ODY4NDY="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MjMzMl84NGQ2NWMyMi0zYTUxLTRjZmEtOWExMi02MjJjODYxNTJkZTg="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MjMzMl84NGQ2NWMyMi0zYTUxLTRjZmEtOWExMi02MjJjODYxNTJkZTg=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Eeltail Alley",
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800\u0026Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Tri-Stringer",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/676d9f49276f171a93ac06646c0fbdfbeb8c3d0284a057aee306404a6034ffef_1.png?Expires=1673308800\u0026Signature=FIwudV6OFoCAULjNWKsDnlbnQu9jkBw~9OtWlHX9kec2nAVyqGYKYV7jISNb52g1Md0B29tmkI52fUxgUg9grflPOg14LA5I9st7f-4hVsFuta2RWBvaM2380NtZxWP~WGKVKDr4JwyV-Dd3SQ8-J5buialpuhO52zsRxAHeS5Y4AKKCZsnJHQarthMWxFIWPFwqUmJaMPghoYIQkvBpGYOBr8Ylla7Q0GRwP7puE04xnHWRGPHXqOdqK25eEk8wHD0L~031u~TDDaX7rk0SpeVijEXt9CZC0raBzOITbL3wwZabe2yIx5yXwzJ~-x5Ruze42q4ocSC1M3HfR4yQPg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTcwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTUyMzMyXzg0ZDY1YzIyLTNhNTEtNGNmYS05YTEyLTYyMmM4NjE1MmRlODp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 5
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MzEyM19mNjdkMGFkOS00ZGMwLTRjZTYtOTk5Zi01ODYxN2ZlNDg5MmE="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MTY1NV8yYjYxYzAwMi0zZTYwLTRkM2YtYjVmMC02YjQ2MmVlMGYyODk="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MTY1NV8yYjYxYzAwMi0zZTYwLTRkM2YtYjVmMC02YjQ2MmVlMGYyODk=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Tri-Stringer",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/676d9f49276f171a93ac06646c0fbdfbeb8c3d0284a057aee306404a6034ffef_1.png?Expires=1673308800\u0026Signature=FIwudV6OFoCAULjNWKsDnlbnQu9jkBw~9OtWlHX9kec2nAVyqGYKYV7jISNb52g1Md0B29tmkI52fUxgUg9grflPOg14LA5I9st7f-4hVsFuta2RWBvaM2380NtZxWP~WGKVKDr4JwyV-Dd3SQ8-J5buialpuhO52zsRxAHeS5Y4AKKCZsnJHQarthMWxFIWPFwqUmJaMPghoYIQkvBpGYOBr8Ylla7Q0GRwP7puE04xnHWRGPHXqOdqK25eEk8wHD0L~031u~TDDaX7rk0SpeVijEXt9CZC0raBzOITbL3wwZabe2yIx5yXwzJ~-x5Ruze42q4ocSC1M3HfR4yQPg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTcwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTUxNjU1XzJiNjFjMDAyLTNlNjAtNGQzZi1iNWYwLTZiNDYyZWUwZjI4OTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 67
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MjMzMl84NGQ2NWMyMi0zYTUxLTRjZmEtOWExMi02MjJjODYxNTJkZTg="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MjY1M184NDgyYzhlOC1jZGIyLTQwMzUtYTRhNy1jYTBkMTE4ZmUzMWU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MjY1M184NDgyYzhlOC1jZGIyLTQwMzUtYTRhNy1jYTBkMTE4ZmUzMWU=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Tower Control",
+                                        "id": "VnNSdWxlLTI="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "DEEMED_LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTQyNjUzXzg0ODJjOGU4LWNkYjItNDAzNS1hNGE3LWNhMGQxMThmZTMxZTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": null,
+                                    "myTeam": {
+                                        "result": null
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE1MTY1NV8yYjYxYzAwMi0zZTYwLTRkM2YtYjVmMC02YjQ2MmVlMGYyODk="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTkwNl9hZTUwNTdmMi00M2EwLTQxZGUtOWRjZS04NjJhNmVlNjRkZDA="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTkwNl9hZTUwNTdmMi00M2EwLTQxZGUtOWRjZS04NjJhNmVlNjRkZDA=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTQxOTA2X2FlNTA1N2YyLTQzYTAtNDFkZS05ZGNlLTg2MmE2ZWU2NGRkMDp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1040,
+                                            "paintRatio": 0.397,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MjY1M184NDgyYzhlOC1jZGIyLTQwMzUtYTRhNy1jYTBkMTE4ZmUzMWU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTQzMF9iZmU5ZTI3My1lOWRkLTQ1ZGYtYmViMy00ODMwNDYxOWFiOWI="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTQzMF9iZmU5ZTI3My1lOWRkLTQ1ZGYtYmViMy00ODMwNDYxOWFiOWI=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTQxNDMwX2JmZTllMjczLWU5ZGQtNDVkZi1iZWIzLTQ4MzA0NjE5YWI5Yjp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1312,
+                                            "paintRatio": 0.5,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTkwNl9hZTUwNTdmMi00M2EwLTQxZGUtOWRjZS04NjJhNmVlNjRkZDA="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MDkyNl9jZWExOTg2MC1jYmY0LTQxY2QtYjFmZi0wNzMzMzc2NTE3ZTI="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MDkyNl9jZWExOTg2MC1jYmY0LTQxY2QtYjFmZi0wNzMzMzc2NTE3ZTI=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Inkblot Art Academy",
+                                        "id": "VnNTdGFnZS0xMw==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/40aba8b36a9439e2d670fde5b3478819ea8a94f9e503b9d783248a5716786f35_3.png?Expires=1673308800\u0026Signature=ezmlCTJqqXxYwFBxXAY6w66NaFEjTkKFO~JLR1jBXzMkSwkwaOKTOVOqrszIfGJ3EDGAdTVlwGb-ystpIWxmuuif3NbapRFpl9pFPNd~RY5xDrY7mYR1kGPq8QIlFBb1Yszp~btUw8WKmeZbSe8Lb-f6yTQ8im-ot4O6zm0PwruiCIy9uo-TVmpFhzyjEfXCC8p21kt6LVPhpFBEDKb7BZNK~~q4dWBrLoNqCuUbGVeWmvcZ4m68sr17syWtgGVImfzwoymbDc0h~AKoVDF6~GiB82RSCIvgQnlTZZldLFEVle8JT3QtUs~GPNebDP0uEe6vgLin1L5-AktvU6IC~Q__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTQwOTI2X2NlYTE5ODYwLWNiZjQtNDFjZC1iMWZmLTA3MzMzNzY1MTdlMjp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1210,
+                                            "paintRatio": 0.464,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MTQzMF9iZmU5ZTI3My1lOWRkLTQ1ZGYtYmViMy00ODMwNDYxOWFiOWI="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTkwM19hMzljMjJlNS1iZmFhLTRlOTUtOGQ0Ni0zNzBlMWI4MzU0YjI="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTkwM19hMzljMjJlNS1iZmFhLTRlOTUtOGQ0Ni0zNzBlMWI4MzU0YjI=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Splat Zones",
+                                        "id": "VnNSdWxlLTE="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "DEEMED_LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTM1OTAzX2EzOWMyMmU1LWJmYWEtNGU5NS04ZDQ2LTM3MGUxYjgzNTRiMjp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": null,
+                                    "myTeam": {
+                                        "result": null
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDE0MDkyNl9jZWExOTg2MC1jYmY0LTQxY2QtYjFmZi0wNzMzMzc2NTE3ZTI="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTIwOF85YTIzOGMyNy03NGI2LTQzYmQtYTYzZi00YmE4YzI3MWRkNmU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTIwOF85YTIzOGMyNy03NGI2LTQzYmQtYTYzZi00YmE4YzI3MWRkNmU=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Splat Zones",
+                                        "id": "VnNSdWxlLTE="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTM1MjA4XzlhMjM4YzI3LTc0YjYtNDNiZC1hNjNmLTRiYThjMjcxZGQ2ZTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTkwM19hMzljMjJlNS1iZmFhLTRlOTUtOGQ0Ni0zNzBlMWI4MzU0YjI="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNDIwNl9kNDMxNDI4MS00Y2JiLTQ4NGUtOTJlNy0yODM0YjFjODQ4ZTI="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNDIwNl9kNDMxNDI4MS00Y2JiLTQ4NGUtOTJlNy0yODM0YjFjODQ4ZTI=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTI="
+                                    },
+                                    "vsRule": {
+                                        "name": "Rainmaker",
+                                        "id": "VnNSdWxlLTM="
+                                    },
+                                    "vsStage": {
+                                        "name": "Sturgeon Shipyard",
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800\u0026Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTM0MjA2X2Q0MzE0MjgxLTRjYmItNDg0ZS05MmU3LTI4MzRiMWM4NDhlMjp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 52
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": null
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNTIwOF85YTIzOGMyNy03NGI2LTQzYmQtYTYzZi00YmE4YzI3MWRkNmU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzMjI0M183ODIzZTY1YS02NzhjLTQ5ZGMtYThjMy0xMjQwYzYwNDA1ZTQ="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzMjI0M183ODIzZTY1YS02NzhjLTQ5ZGMtYThjMy0xMjQwYzYwNDA1ZTQ=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTI="
+                                    },
+                                    "vsRule": {
+                                        "name": "Rainmaker",
+                                        "id": "VnNSdWxlLTM="
+                                    },
+                                    "vsStage": {
+                                        "name": "Sturgeon Shipyard",
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800\u0026Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjEwMDRUMTMyMjQzXzc4MjNlNjVhLTY3OGMtNDlkYy1hOGMzLTEyNDBjNjA0MDVlNDp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 58
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": null
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzNDIwNl9kNDMxNDI4MS00Y2JiLTQ4NGUtOTJlNy0yODM0YjFjODQ4ZTI="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTI4VDExNDc1Nl8wMzI2MDk3NC0zZTNhLTRmZjMtYmZhNi0zMWNhOTBhOWU3NTQ="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTI4VDExNDc1Nl8wMzI2MDk3NC0zZTNhLTRmZjMtYmZhNi0zMWNhOTBhOWU3NTQ=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTUx"
+                                    },
+                                    "vsRule": {
+                                        "name": "Clam Blitz",
+                                        "id": "VnNSdWxlLTQ="
+                                    },
+                                    "vsStage": {
+                                        "name": "Wahoo World",
+                                        "id": "VnNTdGFnZS0xNg==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/61ea801fa4ed32360dcaf83986222ded46a72dbf56194acc6d0cf4659a92ba85_3.png?Expires=1673308800\u0026Signature=YE8uiHAdy3NxJeM3vAA6bnPtK5Fjy6-FLwHDnKM1OeL9xN3YOOhtOZMAlBCKmJ0emJdV-j6J9KK2i92Lata3v5L9gpYR55qeBg8b4JsKcX7rl1y96mG50E42IIKCiklzX3M1iDV6nruidNhVZkiU04gHqrrz0cmmnQCreb7O8w97aNk4Sak0KlbmEVLopRGIHYNc8buyZXLHJAyDlcPnDaoTPK9cx~uEgscumd4ZkTvOwB4WcfKYo~Ymm3Ac2sPkCU2oCC0B1zTHxPaK44D4VDFNUltp1N9B35~7PUw-kkwuADbVGOLkrRdo1QgaHYF-o5iqE64z65wqJNfXqix8Ng__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MjhUMTE0NzU2XzAzMjYwOTc0LTNlM2EtNGZmMy1iZmE2LTMxY2E5MGE5ZTc1NDp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 20
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": -2
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIxMDA0VDEzMjI0M183ODIzZTY1YS02NzhjLTQ5ZGMtYThjMy0xMjQwYzYwNDA1ZTQ="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MTE0NF83MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MTE0NF83MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Eeltail Alley",
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800\u0026Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "DEEMED_LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MjFUMTQxMTQ0XzczMDA1MGNlLTZkMjktNDVhZi1hOTNmLWVlNTRlY2E5M2Q0ZTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": null,
+                                    "myTeam": {
+                                        "result": null
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTI4VDExNDc1Nl8wMzI2MDk3NC0zZTNhLTRmZjMtYmZhNi0zMWNhOTBhOWU3NTQ="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MDcyM183MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MDcyM183MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Mincemeat Metalworks",
+                                        "id": "VnNTdGFnZS02",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/de1f212e9ff0648f36cd3b8e0917ef36b3bd51445159297dcb948f34a09f2f05_3.png?Expires=1673308800\u0026Signature=AjXAbtuRslIkEIb2MKY83yzUNbKjQWNeZvDLP2fD~Gt-5Zxwu4yfj8f7IB8kU4lcBEaMDqqdtV8YYfaXFQP8UmMnHV7KK4Ctsq~wbpkFWtbIPLMtIMz2GyCfSfINqfNQF577So9HtVcndEdf6P3UACPWBTBFgmbe97kd-HAL~igicpXFC5hfmJtZmmRmmPlyM26kL6zBQIgUsHIi~l87NDIoRLgfH~WLU4u2szWDcuKBgQrNqTWgmbR6d0-ZuUUVN-XFxlnUm82u8O~J5ae~HGGl0gpsykth1F6Z5K2yB6XGy2bca0G6zvhtg8foWX7N9LqSFmzmTK61s3-Dgh2h-w__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MjFUMTQwNzIzXzczMDA1MGNlLTZkMjktNDVhZi1hOTNmLWVlNTRlY2E5M2Q0ZTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 836,
+                                            "paintRatio": 0.382,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MTE0NF83MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzgyOV8wMWE3NzFmYS03YTRlLTRjODQtOGFkNC1hNDE1ZDNmZmJkOTc="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzgyOV8wMWE3NzFmYS03YTRlLTRjODQtOGFkNC1hNDE1ZDNmZmJkOTc=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTMzODI5XzAxYTc3MWZhLTdhNGUtNGM4NC04YWQ0LWE0MTVkM2ZmYmQ5Nzp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 896,
+                                            "paintRatio": 0.342,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTIxVDE0MDcyM183MzAwNTBjZS02ZDI5LTQ1YWYtYTkzZi1lZTU0ZWNhOTNkNGU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzMzOV9jMmI5NWQ4Yi1iNzI5LTRmNjUtYjk3YS0yYmU4ZjNiZmM5ZjE="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzMzOV9jMmI5NWQ4Yi1iNzI5LTRmNjUtYjk3YS0yYmU4ZjNiZmM5ZjE=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Hydra Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/34fe0401b6f6a0b09839696fc820ece9570a9d56e3a746b65f0604dec91a9920_1.png?Expires=1673308800\u0026Signature=pSdvZpe1et1cst156XsWAbuzNAMWahGMx78cQpxWHPNTfgpPVL4uYc2H8~64Wqv2DHVTuHfdvSwZj2i8GbAWZ6hKAq2eDAwCIL95PWTVbo28GCpIEB33G1r3ubDoXz3mcMxL7n-QLB9GvEg~AKg5G8gS0Mami2ZTXA5c0MUKmwu9X67JEzV~IBaDcdb7Y3GY40Q7x-wm7pRwnsjdxKmckbYXsGsp7D3BvmLYaN~6byr2jmDrlp12e1B95dtYiLATpD1RE4hOvbB5oUC08UtNk5NjJ06ZzAjEr~T1WOOSpFD9GGTr1RG4o1GFiT2SqJj64wSbuojh3fF77J8IIQX-JA__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMjA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTMzMzM5X2MyYjk1ZDhiLWI3MjktNGY2NS1iOTdhLTJiZThmM2JmYzlmMTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1234,
+                                            "paintRatio": 0.471,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzgyOV8wMWE3NzFmYS03YTRlLTRjODQtOGFkNC1hNDE1ZDNmZmJkOTc="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTkyOF9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTkyOF9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Heavy Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/fd06f01742a3b25ac57941150b3b81d56633831902f2da1f19a6244f2d8dd6fd_1.png?Expires=1673308800\u0026Signature=S14WzzsH9DGdZ5Ysq7fxNz0HbZ8n-LKLC0ujtdDVsMBf80c9vdXVXfetWB5rA2WdMJvwiTysBE4sWMjVbTs3Pgpor7BgL8wWF5in7kClSKmDC8oGA9py6YyvsrE9xafNd0jjL~hJcFXazjqYefqJax0VfjIPIoednvji2ZDBcZYOLcOBnxiJil~XVwRuU0VDv13XuvvfZrHhUcZX7lVYPXaZLEDN7518mYDRjpqRno8obzZ7wbG1ZROdpZ4nJVUe2ZaVVCEGCGgfVTcJHZ3CVm~7W0oOGl0JR~j~QTq-mL2h2WeuqCT0ggZ0TOCoKOgMZGYRdwo2k9UYCs0yNqLTLQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTMxOTI4X2RjOGJkZmMzLWMyZjktNDQ5My1hODQxLTY4NDNkMjhjYWU2NTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1205,
+                                            "paintRatio": 0.46,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMzMzOV9jMmI5NWQ4Yi1iNzI5LTRmNjUtYjk3YS0yYmU4ZjNiZmM5ZjE="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTQyNV9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTQyNV9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Hammerhead Bridge",
+                                        "id": "VnNTdGFnZS0xMA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/1db8ab338b64b464df50e7f9e270e59423ff8caac6f09679a24f1b7acf3a82f3_3.png?Expires=1673308800\u0026Signature=eZ5fzAPncKJUXbWJoLehnrS-4pamEplX8ShZMKibYhcalp8RNWby2QTaR5uGxkWhmymtgoagLah57QoEiZCNuYmFKk6YaDfQNM~LjgZbym2Xkgao~faZ3bsVtj8rWNlEDxo7xzINMb0aLtS-akUr1vaJGJvvIPTCLKFou7T8hL190GSw7IGZByj~qAIxp6g1I4loPQeUiuY4QJN3kqikB-QD5lsdJItfip2SrRJJiBxNQU0AuajB4BF4D6OEq1T~dViRGdWKuFXy2c5amS4DjeJK0O63lsMURal2QxKJomTpeZfKDQH1-k7Phg-paiBTJam6g4XlNvhpCekYywUJWg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Heavy Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/fd06f01742a3b25ac57941150b3b81d56633831902f2da1f19a6244f2d8dd6fd_1.png?Expires=1673308800\u0026Signature=S14WzzsH9DGdZ5Ysq7fxNz0HbZ8n-LKLC0ujtdDVsMBf80c9vdXVXfetWB5rA2WdMJvwiTysBE4sWMjVbTs3Pgpor7BgL8wWF5in7kClSKmDC8oGA9py6YyvsrE9xafNd0jjL~hJcFXazjqYefqJax0VfjIPIoednvji2ZDBcZYOLcOBnxiJil~XVwRuU0VDv13XuvvfZrHhUcZX7lVYPXaZLEDN7518mYDRjpqRno8obzZ7wbG1ZROdpZ4nJVUe2ZaVVCEGCGgfVTcJHZ3CVm~7W0oOGl0JR~j~QTq-mL2h2WeuqCT0ggZ0TOCoKOgMZGYRdwo2k9UYCs0yNqLTLQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTMxNDI1X2RjOGJkZmMzLWMyZjktNDQ5My1hODQxLTY4NDNkMjhjYWU2NTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1474,
+                                            "paintRatio": 0.595,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTkyOF9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMDUwM19kYTVmZTc1Zi0yYjQ1LTQ2NzMtYjljMC1mMzIxZjlhN2RlNjQ="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMDUwM19kYTVmZTc1Zi0yYjQ1LTQ2NzMtYjljMC1mMzIxZjlhN2RlNjQ=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTI="
+                                    },
+                                    "vsRule": {
+                                        "name": "Rainmaker",
+                                        "id": "VnNSdWxlLTM="
+                                    },
+                                    "vsStage": {
+                                        "name": "Eeltail Alley",
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800\u0026Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Heavy Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/fd06f01742a3b25ac57941150b3b81d56633831902f2da1f19a6244f2d8dd6fd_1.png?Expires=1673308800\u0026Signature=S14WzzsH9DGdZ5Ysq7fxNz0HbZ8n-LKLC0ujtdDVsMBf80c9vdXVXfetWB5rA2WdMJvwiTysBE4sWMjVbTs3Pgpor7BgL8wWF5in7kClSKmDC8oGA9py6YyvsrE9xafNd0jjL~hJcFXazjqYefqJax0VfjIPIoednvji2ZDBcZYOLcOBnxiJil~XVwRuU0VDv13XuvvfZrHhUcZX7lVYPXaZLEDN7518mYDRjpqRno8obzZ7wbG1ZROdpZ4nJVUe2ZaVVCEGCGgfVTcJHZ3CVm~7W0oOGl0JR~j~QTq-mL2h2WeuqCT0ggZ0TOCoKOgMZGYRdwo2k9UYCs0yNqLTLQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTMwNTAzX2RhNWZlNzVmLTJiNDUtNDY3My1iOWMwLWYzMjFmOWE3ZGU2NDp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 48
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": null
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMTQyNV9kYzhiZGZjMy1jMmY5LTQ0OTMtYTg0MS02ODQzZDI4Y2FlNjU="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTk1OV81YTg0NWU1MS01YWViLTQzNTAtOWJhYS1kNjVkODU4NGU4M2Q="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTk1OV81YTg0NWU1MS01YWViLTQzNTAtOWJhYS1kNjVkODU4NGU4M2Q=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTI="
+                                    },
+                                    "vsRule": {
+                                        "name": "Rainmaker",
+                                        "id": "VnNSdWxlLTM="
+                                    },
+                                    "vsStage": {
+                                        "name": "Eeltail Alley",
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800\u0026Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Heavy Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/fd06f01742a3b25ac57941150b3b81d56633831902f2da1f19a6244f2d8dd6fd_1.png?Expires=1673308800\u0026Signature=S14WzzsH9DGdZ5Ysq7fxNz0HbZ8n-LKLC0ujtdDVsMBf80c9vdXVXfetWB5rA2WdMJvwiTysBE4sWMjVbTs3Pgpor7BgL8wWF5in7kClSKmDC8oGA9py6YyvsrE9xafNd0jjL~hJcFXazjqYefqJax0VfjIPIoednvji2ZDBcZYOLcOBnxiJil~XVwRuU0VDv13XuvvfZrHhUcZX7lVYPXaZLEDN7518mYDRjpqRno8obzZ7wbG1ZROdpZ4nJVUe2ZaVVCEGCGgfVTcJHZ3CVm~7W0oOGl0JR~j~QTq-mL2h2WeuqCT0ggZ0TOCoKOgMZGYRdwo2k9UYCs0yNqLTLQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTI1OTU5XzVhODQ1ZTUxLTVhZWItNDM1MC05YmFhLWQ2NWQ4NTg0ZTgzZDp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "WIN",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 100
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": null
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEzMDUwM19kYTVmZTc1Zi0yYjQ1LTQ2NzMtYjljMC1mMzIxZjlhN2RlNjQ="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTE0MV82NWM3NGJiZC0yMjdjLTQ3ODctODQ2OS00YmIzNmZlZDE2Yjg="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTE0MV82NWM3NGJiZC0yMjdjLTQ3ODctODQ2OS00YmIzNmZlZDE2Yjg=",
+                                    "vsMode": {
+                                        "mode": "BANKARA",
+                                        "id": "VnNNb2RlLTI="
+                                    },
+                                    "vsRule": {
+                                        "name": "Rainmaker",
+                                        "id": "VnNSdWxlLTM="
+                                    },
+                                    "vsStage": {
+                                        "name": "Inkblot Art Academy",
+                                        "id": "VnNTdGFnZS0xMw==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/40aba8b36a9439e2d670fde5b3478819ea8a94f9e503b9d783248a5716786f35_3.png?Expires=1673308800\u0026Signature=ezmlCTJqqXxYwFBxXAY6w66NaFEjTkKFO~JLR1jBXzMkSwkwaOKTOVOqrszIfGJ3EDGAdTVlwGb-ystpIWxmuuif3NbapRFpl9pFPNd~RY5xDrY7mYR1kGPq8QIlFBb1Yszp~btUw8WKmeZbSe8Lb-f6yTQ8im-ot4O6zm0PwruiCIy9uo-TVmpFhzyjEfXCC8p21kt6LVPhpFBEDKb7BZNK~~q4dWBrLoNqCuUbGVeWmvcZ4m68sr17syWtgGVImfzwoymbDc0h~AKoVDF6~GiB82RSCIvgQnlTZZldLFEVle8JT3QtUs~GPNebDP0uEe6vgLin1L5-AktvU6IC~Q__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Heavy Splatling",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/fd06f01742a3b25ac57941150b3b81d56633831902f2da1f19a6244f2d8dd6fd_1.png?Expires=1673308800\u0026Signature=S14WzzsH9DGdZ5Ysq7fxNz0HbZ8n-LKLC0ujtdDVsMBf80c9vdXVXfetWB5rA2WdMJvwiTysBE4sWMjVbTs3Pgpor7BgL8wWF5in7kClSKmDC8oGA9py6YyvsrE9xafNd0jjL~hJcFXazjqYefqJax0VfjIPIoednvji2ZDBcZYOLcOBnxiJil~XVwRuU0VDv13XuvvfZrHhUcZX7lVYPXaZLEDN7518mYDRjpqRno8obzZ7wbG1ZROdpZ4nJVUe2ZaVVCEGCGgfVTcJHZ3CVm~7W0oOGl0JR~j~QTq-mL2h2WeuqCT0ggZ0TOCoKOgMZGYRdwo2k9UYCs0yNqLTLQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQwMTA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTI1MTQxXzY1Yzc0YmJkLTIyN2MtNDc4Ny04NDY5LTRiYjM2ZmVkMTZiODp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 29
+                                        }
+                                    },
+                                    "udemae": "B-",
+                                    "bankaraMatch": {
+                                        "earnedUdemaePoint": null
+                                    },
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTk1OV81YTg0NWU1MS01YWViLTQzNTAtOWJhYS1kNjVkODU4NGU4M2Q="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNDI0MV9hOGFkYWY4My01ZGIzLTRhZGEtODFkMS0zNzU0M2ZlOTU0NTc="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNDI0MV9hOGFkYWY4My01ZGIzLTRhZGEtODFkMS0zNzU0M2ZlOTU0NTc=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Hammerhead Bridge",
+                                        "id": "VnNTdGFnZS0xMA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/1db8ab338b64b464df50e7f9e270e59423ff8caac6f09679a24f1b7acf3a82f3_3.png?Expires=1673308800\u0026Signature=eZ5fzAPncKJUXbWJoLehnrS-4pamEplX8ShZMKibYhcalp8RNWby2QTaR5uGxkWhmymtgoagLah57QoEiZCNuYmFKk6YaDfQNM~LjgZbym2Xkgao~faZ3bsVtj8rWNlEDxo7xzINMb0aLtS-akUr1vaJGJvvIPTCLKFou7T8hL190GSw7IGZByj~qAIxp6g1I4loPQeUiuY4QJN3kqikB-QD5lsdJItfip2SrRJJiBxNQU0AuajB4BF4D6OEq1T~dViRGdWKuFXy2c5amS4DjeJK0O63lsMURal2QxKJomTpeZfKDQH1-k7Phg-paiBTJam6g4XlNvhpCekYywUJWg__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Slosher",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/4a8bf6b4ad3b2942728bbd270bf64d5848b64f3c843a3b12ef83c0ebb5de1b3d_1.png?Expires=1673308800\u0026Signature=iE4HdDjA3P4-ezjZNi8oT4T2HetFVa1DHeNEPge7XuR8gM~Ptm54B3rqVv~bDhs~sa2U1-l-6IdK41Rbu2Fkkuh48Y3XGnHmHqlIVEPF4nvfSfHbHo-CcYfru9xZ5Gz~Oi2vXyic~VYFBow577eScykF~P0Mn0tXLJSDW0vb3VjB2UbJMRRhpTdhrwQmKoNbC-fZis-xIRe5BigAUD65ToYulSQeq4uJQqq~3~54-uIypmOTS32z6~mc174XKqfUHCGgDvVvll~Phqbrpk3I2kVoKgqOxq948MGJrIwn0SxX5ImIJ3KA7FmxJf1Rs3q~C~ADwKY~S9Y7lnp5A3Be~w__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTMwMDA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTI0MjQxX2E4YWRhZjgzLTVkYjMtNGFkYS04MWQxLTM3NTQzZmU5NTQ1Nzp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1112,
+                                            "paintRatio": 0.449,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNTE0MV82NWM3NGJiZC0yMjdjLTQ3ODctODQ2OS00YmIzNmZlZDE2Yjg="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyMzk0Ml80ZTk5OGFjYy0zZDcwLTQyZjEtOGE3Mi05OTk3MjIzZmJkOGE="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyMzk0Ml80ZTk5OGFjYy0zZDcwLTQyZjEtOGE3Mi05OTk3MjIzZmJkOGE=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Undertow Spillway",
+                                        "id": "VnNTdGFnZS00",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/9b1c17b2075479d0397d2fb96efbc6fa3a28900712920e5fe1e9dfc59c6abc5c_3.png?Expires=1673308800\u0026Signature=NmsRLP2uxL-wCMBE49yZnc-t-uq7qdopcNV-oUTvQp~EHbTl9rW3YnDUZfOamUFV4nLXYU2No9TZHc0e3jNEPM2zIPyfKMVYTfsYly59uaT5PGBCYYnmgFm2dzcvKukEyApUV3SFq9jP4mWjD~KMrZ49rdZUh7EQ~3~JwVdsy2teCK~6LPMw8DF9aauTGWmHY6-75sVBUDiU8-rs2a0jFDpxBV6AHLMf0bsjxSuJs4vIFuSNT6OEVtjKbaWSNa0XzVGurxoqfCqpbMTyFnbNQ60A9TbbYVGay8ApC6cjTYRp6AyLY6lBoyKwdHcU4AI8wM~~pS72N5y7LrfezAuxEQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "DEEMED_LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Slosher",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/4a8bf6b4ad3b2942728bbd270bf64d5848b64f3c843a3b12ef83c0ebb5de1b3d_1.png?Expires=1673308800\u0026Signature=iE4HdDjA3P4-ezjZNi8oT4T2HetFVa1DHeNEPge7XuR8gM~Ptm54B3rqVv~bDhs~sa2U1-l-6IdK41Rbu2Fkkuh48Y3XGnHmHqlIVEPF4nvfSfHbHo-CcYfru9xZ5Gz~Oi2vXyic~VYFBow577eScykF~P0Mn0tXLJSDW0vb3VjB2UbJMRRhpTdhrwQmKoNbC-fZis-xIRe5BigAUD65ToYulSQeq4uJQqq~3~54-uIypmOTS32z6~mc174XKqfUHCGgDvVvll~Phqbrpk3I2kVoKgqOxq948MGJrIwn0SxX5ImIJ3KA7FmxJf1Rs3q~C~ADwKY~S9Y7lnp5A3Be~w__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTMwMDA="
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MThUMTIzOTQyXzRlOTk4YWNjLTNkNzAtNDJmMS04YTcyLTk5OTcyMjNmYmQ4YTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": null,
+                                    "myTeam": {
+                                        "result": null
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyNDI0MV9hOGFkYWY4My01ZGIzLTRhZGEtODFkMS0zNzU0M2ZlOTU0NTc="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDU1M18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDU1M18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Scorch Gorge",
+                                        "id": "VnNTdGFnZS0x",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/35f9ca08ccc2bf759774ab2cb886567c117b9287875ca92fb590c1294ddcdc1e_3.png?Expires=1673308800\u0026Signature=wo13cX5m0BT5QbPV80y5~TnN67UjjelUkQP09uoJ4uhzI4IsL0ETMNHNwM5c7JUWY6rAbXzZkes~ZyYtnY5GOiSedzsIuXU4IIsVr9yos4Q46XBNorDH7tKjIStNqA3~QXT3yAZTl4nEh-GOenorQCnSxDlppfqBfM~~uUxEyQFjD8zS4rmWCcQmaPRZO8eYFq6sld~oKvjPTx1HA9TyMtQH2GRr4RDCrzzKqTRUzHZcXPO2lkxhkbnzRYCj4xtGmtDCvgMQ~a9cpyEdyYfy27PsxBOjh1Lrr5dzdGQHd8pNa8NVguqiVGDXxm3hJsbG5CJhJYI6ytKElCBXRdpesQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTU0NTUzXzI4ODVhYTdmLWI0NDctNDBmZC04NTQ0LWUyZTg0ZGVmZDJjOTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1049,
+                                            "paintRatio": 0.49,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE4VDEyMzk0Ml80ZTk5OGFjYy0zZDcwLTQyZjEtOGE3Mi05OTk3MjIzZmJkOGE="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDEyN18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDEyN18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTU0MTI3XzI4ODVhYTdmLWI0NDctNDBmZC04NTQ0LWUyZTg0ZGVmZDJjOTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1029,
+                                            "paintRatio": 0.435,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDU1M18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MzUzN19hM2I3ZmUwNi1jODRiLTQ3MWYtYTkyYy1lZTJlZjNjYzdlNTg="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MzUzN19hM2I3ZmUwNi1jODRiLTQ3MWYtYTkyYy1lZTJlZjNjYzdlNTg=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTUzNTM3X2EzYjdmZTA2LWM4NGItNDcxZi1hOTJjLWVlMmVmM2NjN2U1ODp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 938,
+                                            "paintRatio": 0.397,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1NDEyN18yODg1YWE3Zi1iNDQ3LTQwZmQtODU0NC1lMmU4NGRlZmQyYzk="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjgzMF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjgzMF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTUyODMwXzgwNGZkNzY3LWVlNTQtNGU1Mi05MGJkLTdiOWFlNTc2OTRhNzp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1167,
+                                            "paintRatio": 0.494,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MzUzN19hM2I3ZmUwNi1jODRiLTQ3MWYtYTkyYy1lZTJlZjNjYzdlNTg="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjQwOF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjQwOF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "LOSE",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTUyNDA4XzgwNGZkNzY3LWVlNTQtNGU1Mi05MGJkLTdiOWFlNTc2OTRhNzp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 919,
+                                            "paintRatio": 0.389,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjgzMF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MDYzN19hYjFiNmFlZS1mZWRiLTQzNzMtOTQzZi01M2I1NGY2MTAxMDE="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MDYzN19hYjFiNmFlZS1mZWRiLTQzNzMtOTQzZi01M2I1NGY2MTAxMDE=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/e3874d7d504acf89488ad7f68d29a348caea1a41cd43bd9a272069b0c0466570_1.png?Expires=1673308800\u0026Signature=pmyHlJCy1e-yxqMVTK7mcf0HU1RuKJ1ZzoByCYCOR4TgTFxHWyS3-McuE82Iq-lDKso9kK4wVOzZDmfaw3pahSrO1wliabps3AZSEB3wjyKWeco10ev3I7t-RZU5VHA93eRmKoaGRLEhuo-Zf9vLaCycxABk1UfZcdmUSWWMAG6AJCJP0vmrE~DSmlRkNbiOv~rVSl6guZeRSstO7awq3-~c-qKtbaZLDIStdtL9Lxo~~H8U6mEjBqSNRvhnpW3lvb3yAqnGEc6GC3N263pgi5cWeAXOQsAKAD4WEzcOdJOuJuv158GQHXpcavKxHnKPcapcmDF-u7eqLWDHPcNqNw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTQw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTUwNjM3X2FiMWI2YWVlLWZlZGItNDM3My05NDNmLTUzYjU0ZjYxMDEwMTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1266,
+                                            "paintRatio": 0.536,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MjQwOF84MDRmZDc2Ny1lZTU0LTRlNTItOTBiZC03YjlhZTU3Njk0YTc="
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE0Mzg1OF8wMDY5MTQxMC0zNjRkLTQ2NDYtOTg1Ny0xODlhMmIwY2JjOWE="
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE0Mzg1OF8wMDY5MTQxMC0zNjRkLTQ2NDYtOTg1Ny0xODlhMmIwY2JjOWE=",
+                                    "vsMode": {
+                                        "mode": "REGULAR",
+                                        "id": "VnNNb2RlLTE="
+                                    },
+                                    "vsRule": {
+                                        "name": "Turf War",
+                                        "id": "VnNSdWxlLTA="
+                                    },
+                                    "vsStage": {
+                                        "name": "Museum d'Alfonsino",
+                                        "id": "VnNTdGFnZS0xMQ==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/b9d8cfa186d197a27e075600a107c99d9e21646d116730f0843e0fff0aaba7dd_3.png?Expires=1673308800\u0026Signature=sP5BuAV2hEnms4KAWUdScnan0gpKrYUzvtHzoxhQziJTZ3pgmWsCOfl-luevCayTRSUEgokNlxbnWeIFa~gZw8tIcgIq4crS4qpHzgdoEVw~4PTDRo24W9y62v1YL83dASIeklNLzJ--RcSUzaXoDIS2VOpCdTRrRw-mK2WoXxLsDYbkJZ2f1sPHc4Bknq7NULewWxNMBa9E9R6Fsm1tfuOZEt5a0i9VNoszrKyQ09mlTn3jbZkDCxlusrlhemdRprNmkN--B-S7qDb6oKcmeF5XELN2j08QtsBl~K~cadS8EHZB7h7oIPUVvoSw5tQArDDR71rcxQ~4hI-ODwVozQ__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                        }
+                                    },
+                                    "judgement": "WIN",
+                                    "player": {
+                                        "weapon": {
+                                            "name": "Splattershot Jr.",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/8e134a80cd54f4235329493afd43ff754b367a65e460facfcca862b174754b0e_1.png?Expires=1673308800\u0026Signature=Qk7mfSMvtlF6DkY~eMhwvnkDDB5GXPbcQs8GZDfT9RBzG0bxr68zB8zA42wubPBgR6EZbjGaahxAu1HkuBe1XH9Sclhe7FtRatVABCTlH~vR6zdweuKgguIYJt6lk2H2XI89pjGnJZbDexK-a1u6ZX0oFqL4mLNsqPa1O4r1uAbytzb3TeUeIimv5ig3l4f2~mi9wCh2AQdQZOMPhv6ciGEP9tqQ~AcRb7uxBkeG~BOHxam6aHl0~nVKMtyaKaRf~gT-Up~9lo0pDQONUcbzpLWGTB0b5D5YJ2EknXcyt2~GVRN22lzcTi-fglpI8-v1p4vaVV-r8lwyVnJFws0dmw__\u0026Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "id": "V2VhcG9uLTEw"
+                                        },
+                                        "id": "VnNQbGF5ZXItdS1xc3FpcHl5aWVsamxteTRndHJtbTpSRUNFTlQ6MjAyMjA5MTVUMTQzODU4XzAwNjkxNDEwLTM2NGQtNDY0Ni05ODU3LTE4OWEyYjBjYmM5YTp1LXFzcWlweXlpZWxqbG15NGd0cm1t",
+                                        "festGrade": null
+                                    },
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": 1466,
+                                            "paintRatio": 0.62,
+                                            "score": null
+                                        }
+                                    },
+                                    "udemae": null,
+                                    "bankaraMatch": null,
+                                    "leagueMatch": null,
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06UkVDRU5UOjIwMjIwOTE1VDE1MDYzN19hYjFiNmFlZS1mZWRiLTQzNzMtOTQzZi01M2I1NGY2MTAxMDE="
+                                    },
+                                    "previousHistoryDetail": null
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "currentFest": null
+    }
+}

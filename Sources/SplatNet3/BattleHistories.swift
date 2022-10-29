@@ -1,15 +1,12 @@
 import Foundation
 
-extension SN3Response {
-    
-    public struct BattleHistories: Decodable {
-        public let summary: Summary
-        public let historyGroupsOnlyFirst: SN3NodesList<First>
-        public let historyGroups: SN3NodesList<Group>
-    }
+public struct BattleHistories: Decodable {
+    public let summary: Summary
+    public let historyGroupsOnlyFirst: SN3NodesList<First>
+    public let historyGroups: SN3NodesList<Group>
 }
 
-extension SN3Response.BattleHistories {
+extension BattleHistories {
     
     public struct Summary: Decodable {
         public let assistAverage: Double
@@ -55,12 +52,12 @@ extension SN3Response.BattleHistories {
     public struct Group: Decodable {
         public let historyDetails: SN3NodesList<Detail>
         /// nil for bankara battles
-        public let lastPlayedTime: Date?
+        public let lastPlayedTime: SN3Date?
         public let bankaraMatchChallenge: BankaraChallenge?
     }
 }
 
-extension SN3Response.BattleHistories.Group {
+extension BattleHistories.Group {
     
     public struct BankaraChallenge: Decodable {
         public let winCount: Int

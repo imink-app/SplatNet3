@@ -25,7 +25,7 @@ public struct SN3ID: RawRepresentable, Codable {
     public init(rawValue: String) {
         self.rawValue = rawValue
     }
-    
+
     public func encode(to encoder: Encoder) throws {
         let str = rawValue.data(using: .utf8)!.base64EncodedString()
         var container = encoder.singleValueContainer()
@@ -41,6 +41,31 @@ public struct SN3ID: RawRepresentable, Codable {
                 .dataCorrupted(.init(codingPath: container.codingPath, debugDescription: "invalid SN3ID"))
         }
         self.init(rawValue: decoded)
+    }
+}
+
+public struct SN3Date: RawRepresentable, Codable {
+
+    public let rawValue: String
+    public let value: Date
+
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        self.value = dateFormatter.date(from: rawValue)!
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(rawValue)
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let rawValue = try container.decode(String.self)
+        self.init(rawValue: rawValue)
     }
 }
 

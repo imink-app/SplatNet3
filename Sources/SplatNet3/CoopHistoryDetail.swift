@@ -1,36 +1,33 @@
 import Foundation
 
-extension SN3Response {
-    
-    public struct CoopHistoryDetail: Decodable {
-        public let __typename: String
-        public let afterGrade: SN3IDName
-        public let afterGradePoint: Int
-        public let bossResult: BossResult?
-        public let coopStage: SN3IDNameImage
-        public let dangerRate: Double
-        public let enemyResults: [EnemyResult]
-        public let id: String
-        public let jobBonus: Int
-        public let jobPoint: Int
-        public let jobRate: Double
-        public let jobScore: Int
-        public let memberResults: [MemberResult]
-        public let myResult: MemberResult
-        public let nextHistoryDetail: SN3JustID
-        public let playedTime: Date
-        public let previousHistoryDetail: SN3JustID?
-        public let resultWave: Int
-        public let rule: Rule
-        public let scale: Scale?
-        public let scenarioCode: SN3Response.Unknown?
-        public let smellMeter: Int
-        public let waveResults: [WaveResult]
-        public let weapons: [SN3NameImage]
-    }
+public struct CoopHistoryDetail: Decodable {
+    public let __typename: String
+    public let afterGrade: SN3IDName
+    public let afterGradePoint: Int
+    public let bossResult: BossResult?
+    public let coopStage: SN3IDNameImage
+    public let dangerRate: Double
+    public let enemyResults: [EnemyResult]
+    public let id: String
+    public let jobBonus: Int
+    public let jobPoint: Int
+    public let jobRate: Double
+    public let jobScore: Int
+    public let memberResults: [MemberResult]
+    public let myResult: MemberResult
+    public let nextHistoryDetail: SN3JustID
+    public let playedTime: SN3Date
+    public let previousHistoryDetail: SN3JustID?
+    public let resultWave: Int
+    public let rule: Rule
+    public let scale: Scale?
+    public let scenarioCode: SN3Unknown?
+    public let smellMeter: Int
+    public let waveResults: [WaveResult]
+    public let weapons: [SN3NameImage]
 }
 
-extension SN3Response.CoopHistoryDetail {
+extension CoopHistoryDetail {
     
     public struct BossResult: Decodable {
         public let boss: SN3IDNameImage
@@ -80,7 +77,7 @@ extension SN3Response.CoopHistoryDetail {
     }
 }
 
-extension SN3Response.CoopHistoryDetail.MemberResult {
+extension CoopHistoryDetail.MemberResult {
     
     public struct Player: Decodable {
         public let __isPlayer: String
