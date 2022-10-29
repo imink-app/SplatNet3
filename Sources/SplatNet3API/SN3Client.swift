@@ -4,8 +4,12 @@ import SplatNet3
 
 public class SN3Client {
     var session: IMSessionType = IMSession.shared
+
     private var webServiceToken: String?
     private var bulletTokens: SN3BulletTokens?
+
+    private let makeBulletNumberOfRetry = 3
+    private var currentMakeBulletRetrys = 0
 
     public init(webVersion: String, session: IMSessionType? = nil) {
         if let session = session {
@@ -15,7 +19,17 @@ public class SN3Client {
         self.session.plugins = [WebVersionPlugin(webVersion: webVersion)]
     }
 
-    public func login(webServiceToken: String) async throws {
+    public func makeBullet(webServiceToken: String? = nil) async throws {
+        if webServiceToken == nil, self.webServiceToken == nil {
+            throw Error.webServiceTokenNoExist
+        }
+
+        if let webServiceToken = webServiceToken {
+            self.webServiceToken = webServiceToken
+        }
+
+        let webServiceToken = self.webServiceToken!
+
         let (data, res) = try await session.request(api: SN3API.bulletTokens(webServiceToken: webServiceToken))
         let statusCode = res.httpURLResponse.statusCode
         if statusCode == 401 {
@@ -30,8 +44,6 @@ public class SN3Client {
         var plugins = session.plugins
         plugins.removeAll { $0 is BulletTokenPlugin }
         session.plugins = plugins + [BulletTokenPlugin(bulletToken: bulletTokens!.bulletToken)]
-
-        self.webServiceToken = webServiceToken
     }
 
     public func getBulletTokens() -> SN3BulletTokens? {
@@ -76,15 +88,31 @@ public class SN3Client {
 
 extension SN3Client {
     private func graphQL<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
-        try await graphQL2(query)
+        do {
+            return try await requestGraphQL(query)
+        } catch Error.invalidBulletToken {
+            // If the request still fails after re-generating bullet_token several times, 
+            // the invalidWebServiceToken is returned and the user is asked to pass in a new WebServiceToken.
+            if currentMakeBulletRetrys >= makeBulletNumberOfRetry {
+                throw Error.invalidWebServiceToken
+            }
+            currentMakeBulletRetrys += 1
+
+            try await makeBullet()
+            return try await graphQL(query)
+        }
     }
 
-    private func graphQL2<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
+    private func requestGraphQL<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
         let (data, res) = try await session.request(api: SN3API.graphQL(query))
         let statusCode = res.httpURLResponse.statusCode
         if statusCode == 401 {
             throw Error.invalidBulletToken
-        } else if statusCode != 200 {
+        } else {
+            currentMakeBulletRetrys = 0
+        }
+        
+        if statusCode != 200 {
             throw Error.responseError(code: res.httpURLResponse.statusCode, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
         }
 
@@ -97,6 +125,7 @@ extension SN3Client {
 
 extension SN3Client {
     enum Error: Swift.Error {
+        case webServiceTokenNoExist
         case invalidWebServiceToken
         case invalidBulletToken
         case responseError(code: Int, url: URL? = nil, body: String? = nil)

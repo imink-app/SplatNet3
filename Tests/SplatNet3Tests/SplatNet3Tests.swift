@@ -23,7 +23,7 @@ final class SplatNet3Tests: XCTestCase {
 
         let client = SN3Client(webVersion: version, session: IMSessionMock())
 
-        try await client.login(webServiceToken: "")
+        try await client.makeBullet(webServiceToken: "")
         XCTAssertEqual(client.getBulletTokens()?.bulletToken, "fyPAHIyA5cAU_Blt9LILYyapCp5FMD91xj0L-1Nt9L2eEgYfEG6wHaQXMCPF69Uqh1QWzcBv4_cXghReVkzQ2Nge3-dRMOPxlNM0wj7aj8XD42NB-kTGbwPjYFo=")
 
         let latestBattleHistories = try await client.getLatestBattleHistories()
