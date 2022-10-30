@@ -12,6 +12,9 @@ let package = Package(
         .library(
             name: "SplatNet3API",
             targets: ["SplatNet3API"]),
+        .library(
+            name: "SplatNet3Helper",
+            targets: ["SplatNet3Helper"]),
     ],
     dependencies: [
         .package(url: "https://github.com/imink-app/InkMoya.git", branch: "main"),
