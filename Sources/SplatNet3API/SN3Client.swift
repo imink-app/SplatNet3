@@ -6,17 +6,26 @@ public class SN3Client {
     var session: IMSessionType = IMSession.shared
 
     private var webServiceToken: String?
-    private var bulletTokens: SN3BulletTokens?
+    private var bulletTokens: BulletTokens?
 
-    private let makeBulletNumberOfRetry = 3
+    private let makeBulletNumberOfRetry: Int
     private var currentMakeBulletRetrys = 0
 
-    public init(webVersion: String, session: IMSessionType? = nil) {
+    public init(webVersion: String, bulletTokens: BulletTokens? = nil, makeBulletNumberOfRetry: Int = 2, session: IMSessionType? = nil) {
+        var plugins = [PluginType]()
+
         if let session = session {
             self.session = session
         }
 
-        self.session.plugins = [WebVersionPlugin(webVersion: webVersion)]
+        if let bulletTokens = bulletTokens {
+            self.bulletTokens = bulletTokens
+            plugins.append(BulletTokenPlugin(bulletToken: bulletTokens.bulletToken))
+        }
+
+        self.session.plugins = plugins + [WebVersionPlugin(webVersion: webVersion)]
+
+        self.makeBulletNumberOfRetry = makeBulletNumberOfRetry
     }
 
     public func makeBullet(webServiceToken: String? = nil) async throws {
@@ -39,14 +48,14 @@ public class SN3Client {
         }
 
         let decoder = JSONDecoder()
-        bulletTokens = try decoder.decode(SN3BulletTokens.self, from: data)
+        bulletTokens = try decoder.decode(BulletTokens.self, from: data)
 
         var plugins = session.plugins
         plugins.removeAll { $0 is BulletTokenPlugin }
         session.plugins = plugins + [BulletTokenPlugin(bulletToken: bulletTokens!.bulletToken)]
     }
 
-    public func getBulletTokens() -> SN3BulletTokens? {
+    public func getBulletTokens() -> BulletTokens? {
         bulletTokens
     }
 

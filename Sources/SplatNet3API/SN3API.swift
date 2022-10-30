@@ -66,7 +66,7 @@ extension SN3API: TargetType {
                 }
 
                 return .jsonData(
-                    SN3GraphQLRequestBody(
+                    GraphQLRequestBody(
                         variables: variables,
                         extensions: .init(
                             persistedQuery: .init(

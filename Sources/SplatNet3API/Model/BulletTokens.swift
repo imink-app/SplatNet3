@@ -1,4 +1,4 @@
-public struct SN3BulletTokens: Decodable {
+public struct BulletTokens: Decodable {
     public let bulletToken: String
     public let lang: String
 }

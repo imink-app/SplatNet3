@@ -1,6 +1,6 @@
 import Foundation
 
-struct SN3GraphQLRequestBody: Encodable {
+struct GraphQLRequestBody: Encodable {
     let variables: [String: String]
     let extensions: Extensions
 
@@ -14,7 +14,7 @@ struct SN3GraphQLRequestBody: Encodable {
     }
 }
 
-// extension SN3GraphQLRequestBody {
+// extension GraphQLRequestBody {
 //     init<T>(extensions: Extensions, variables: T = [String: String]()) where T: Encodable {
 //         self.extensions = extensions
 //         self.variables = variables
