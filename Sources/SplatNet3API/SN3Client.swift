@@ -132,7 +132,7 @@ extension SN3Client {
     }
 }
 
-extension SN3Client {
+public extension SN3Client {
     enum Error: Swift.Error {
         case webServiceTokenNoExist
         case invalidWebServiceToken
