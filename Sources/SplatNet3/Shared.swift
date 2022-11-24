@@ -21,9 +21,11 @@ extension SN3NodesList: RandomAccessCollection {
 public struct SN3ID: RawRepresentable, Codable {
     
     public let rawValue: String
+    public let value: String
     
     public init(rawValue: String) {
         self.rawValue = rawValue
+        self.value = rawValue.data(using: .utf8)!.base64EncodedString()
     }
 
     public func encode(to encoder: Encoder) throws {
