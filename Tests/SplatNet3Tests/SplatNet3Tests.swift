@@ -42,6 +42,9 @@ final class SplatNet3Tests: XCTestCase {
         XCTAssertEqual(vsHistoryDetail.id.rawValue, "VsHistoryDetail-u-qsqipyyieljlmy4gtrmm:BANKARA:20221004T154347_92b89ca5-83ec-490a-9dd4-5c2267e90925")
         XCTAssertEqual(vsHistoryDetail.playedTime.rawValue, "2022-10-04T15:43:47Z")
 
+        let disconnectionVSHistoryDetail = try await client.getVSHistoryDetail(vsResultId: "disconnection")
+        XCTAssertTrue(disconnectionVSHistoryDetail.knockout == nil)
+
         let coopHistory = try await client.getCoopHistory()
         XCTAssertEqual(coopHistory.historyGroups.first!.historyDetails.count, 3)
 

@@ -9,7 +9,8 @@ public struct VSHistoryDetail: Decodable {
     public let vsRule: VSRule
     public let vsStage: SN3IDNameImage
     public let judgement: VSJudgement
-    public let knockout: VSKnockout
+    // nil here if the game is disconnected
+    public let knockout: VSKnockout?
     public let player: PlayerSelf
     public let awards: [Award]
     public let myTeam: Team
@@ -91,7 +92,8 @@ extension VSHistoryDetail {
         public let judgement: VSJudgement
         public let order: Int
         public let players: [Player]
-        public let result: TeamResult
+        // nil here if the game is disconnected
+        public let result: TeamResult?
         public let tricolorRole: TricolorRole?
     }
 }
@@ -107,7 +109,8 @@ extension VSHistoryDetail.Team {
         public let species: SquidSpecies
         public let isMyself: Bool
         public let paint: Int
-        public let result: PlayerResult
+        // nil here if the game is disconnected
+        public let result: PlayerResult?
         
         public let weapon: Weapon
         public let headGear: VSGear

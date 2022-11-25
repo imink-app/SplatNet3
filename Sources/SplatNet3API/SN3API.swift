@@ -107,8 +107,12 @@ extension SN3API {
                     return "bankaraBattleHistories.json"
                 case .privateBattleHistories: 
                     return "privateBattleHistories.json"
-                case .vsHistoryDetail: 
-                    return "vsHistoryDetail.json"
+                case .vsHistoryDetail(let vsResultId): 
+                    if vsResultId == "disconnection" {
+                        return "vsHistoreDetail_disconnection.json"
+                    } else {
+                        return "vsHistoryDetail.json"
+                    }
                 case .coopHistory: 
                     return "coopHistory.json"
                 case .coopHistoryDetail: 
