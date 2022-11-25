@@ -4,7 +4,7 @@ import SplatNet3
 
 public enum SN3API {
     case web(path: String = "/")
-    case bulletTokens(webServiceToken: String)
+    case bulletTokens(gameServiceToken: String)
     case graphQL(_ query: SN3PersistedQuery)
 }
 
@@ -35,11 +35,11 @@ extension SN3API: TargetType {
         switch self {
             case .web:
                 return nil
-            case .bulletTokens(let webServiceToken):
+            case .bulletTokens(let gameServiceToken):
                 return [
                     "Accept-Language": "en-GB",
                     "X-NACountry": "US",
-                    "Cookie": "_gtoken=\(webServiceToken);"
+                    "Cookie": "_gtoken=\(gameServiceToken);"
                 ]
             case .graphQL:
                 return [
