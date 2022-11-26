@@ -11,12 +11,14 @@ public class SN3Client {
     private let makeBulletNumberOfRetry: Int
     private var currentMakeBulletRetrys = 0
 
-    public init(webVersion: String, bulletTokens: BulletTokens? = nil, makeBulletNumberOfRetry: Int = 2, session: IMSessionType? = nil) {
+    public init(webVersion: String, gameServiceToken: String, bulletTokens: BulletTokens? = nil, makeBulletNumberOfRetry: Int = 2, session: IMSessionType? = nil) {
         var plugins = [PluginType]()
 
         if let session = session {
             self.session = session
         }
+
+        self.gameServiceToken = gameServiceToken
 
         if let bulletTokens = bulletTokens {
             self.bulletTokens = bulletTokens

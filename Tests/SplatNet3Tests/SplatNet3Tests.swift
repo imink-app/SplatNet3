@@ -21,7 +21,7 @@ final class SplatNet3Tests: XCTestCase {
         SN3Helper.session = IMSessionMock()
         let version = try await SN3Helper.getWebViewVersion()
 
-        let client = SN3Client(webVersion: version, session: IMSessionMock())
+        let client = SN3Client(webVersion: version, gameServiceToken: "", session: IMSessionMock())
 
         let bulletTokens = try await client.makeBullet(gameServiceToken: "")
         XCTAssertEqual(bulletTokens.bulletToken, "fyPAHIyA5cAU_Blt9LILYyapCp5FMD91xj0L-1Nt9L2eEgYfEG6wHaQXMCPF69Uqh1QWzcBv4_cXghReVkzQ2Nge3-dRMOPxlNM0wj7aj8XD42NB-kTGbwPjYFo=")
