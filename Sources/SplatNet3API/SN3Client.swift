@@ -3,60 +3,23 @@ import InkMoya
 import SplatNet3
 
 public class SN3Client {
-    var session: IMSessionType = IMSession.shared
+    private var session: IMSessionType = IMSession.shared
+    private let authorizationStorage: SN3AuthorizationStorage
 
-    private var gameServiceToken: String?
-    private var bulletTokens: BulletTokens?
+    private let webVersion: String
+    private let gameServiceToken: String
 
-    private let makeBulletNumberOfRetry: Int
-    private var currentMakeBulletRetrys = 0
-
-    public init(webVersion: String, gameServiceToken: String, bulletTokens: BulletTokens? = nil, makeBulletNumberOfRetry: Int = 2, session: IMSessionType? = nil) {
-        var plugins = [PluginType]()
+    public init(webVersion: String, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage, session: IMSessionType? = nil) async throws {
+        self.webVersion = webVersion
+        self.gameServiceToken = gameServiceToken
+        self.authorizationStorage = authorizationStorage
 
         if let session = session {
             self.session = session
         }
 
-        self.gameServiceToken = gameServiceToken
-
-        if let bulletTokens = bulletTokens {
-            self.bulletTokens = bulletTokens
-            plugins.append(BulletTokenPlugin(bulletToken: bulletTokens.bulletToken))
-        }
-
-        self.session.plugins = plugins + [WebVersionPlugin(webVersion: webVersion)]
-
-        self.makeBulletNumberOfRetry = makeBulletNumberOfRetry
-    }
-
-    public func makeBullet(gameServiceToken: String? = nil) async throws -> BulletTokens {
-        if gameServiceToken == nil, self.gameServiceToken == nil {
-            throw Error.gameServiceTokenNoExist
-        }
-
-        if let gameServiceToken = gameServiceToken {
-            self.gameServiceToken = gameServiceToken
-        }
-
-        let gameServiceToken = self.gameServiceToken!
-
-        let (data, res) = try await session.request(api: SN3API.bulletTokens(gameServiceToken: gameServiceToken))
-        let statusCode = res.httpURLResponse.statusCode
-        if statusCode == 401 {
-            throw Error.invalidGameServiceToken
-        } else if statusCode != 200, statusCode != 201 {
-            throw Error.responseError(code: statusCode, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
-        }
-
-        let decoder = JSONDecoder()
-        let bulletTokens = try decoder.decode(BulletTokens.self, from: data)
-
-        var plugins = session.plugins
-        plugins.removeAll { $0 is BulletTokenPlugin }
-        session.plugins = plugins + [BulletTokenPlugin(bulletToken: bulletTokens.bulletToken)]
-
-        return bulletTokens
+        try await configureSession()
+        try await makeBullet()
     }
 
     public func getLatestBattleHistories() async throws -> BattleHistories {
@@ -96,17 +59,28 @@ public class SN3Client {
 }
 
 extension SN3Client {
+    private func makeBullet() async throws {
+        let (data, res) = try await session.request(api: SN3API.bulletTokens(gameServiceToken: gameServiceToken))
+        let statusCode = res.httpURLResponse.statusCode
+        if statusCode == 401 {
+            throw Error.invalidGameServiceToken
+        } else if statusCode != 200, statusCode != 201 {
+            throw Error.responseError(code: statusCode, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
+        }
+
+        let decoder = JSONDecoder()
+        let bulletTokens = try decoder.decode(BulletTokens.self, from: data)
+
+        try await authorizationStorage.setBulletTokens(bulletTokens)
+        try await configureSession()
+    }
+}
+
+extension SN3Client {
     private func graphQL<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
         do {
             return try await requestGraphQL(query)
         } catch Error.invalidBulletToken {
-            // If the request still fails after re-generating bullet_token several times, 
-            // the invalidGameServiceToken is returned and the user is asked to pass in a new GameServiceToken.
-            if currentMakeBulletRetrys >= makeBulletNumberOfRetry {
-                throw Error.invalidGameServiceToken
-            }
-            currentMakeBulletRetrys += 1
-
             try await makeBullet()
             return try await graphQL(query)
         }
@@ -117,8 +91,6 @@ extension SN3Client {
         let statusCode = res.httpURLResponse.statusCode
         if statusCode == 401 {
             throw Error.invalidBulletToken
-        } else {
-            currentMakeBulletRetrys = 0
         }
         
         if statusCode != 200 {
@@ -132,9 +104,22 @@ extension SN3Client {
     }
 }
 
+extension SN3Client {
+    private func configureSession() async throws {
+        var plugins = [PluginType]()
+
+        plugins.append(WebVersionPlugin(webVersion: webVersion))
+
+        if let bulletTokens = try await authorizationStorage.getBulletTokens() {
+            plugins.append(BulletTokenPlugin(bulletToken: bulletTokens.bulletToken))
+        }
+
+        session.plugins = plugins
+    }
+}
+
 public extension SN3Client {
     enum Error: Swift.Error {
-        case gameServiceTokenNoExist
         case invalidGameServiceToken
         case invalidBulletToken
         case responseError(code: Int, url: URL? = nil, body: String? = nil)
