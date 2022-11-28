@@ -69,9 +69,10 @@ extension SN3Client {
     private func makeBullet() async throws {
         let (data, res) = try await session.request(api: SN3API.bulletTokens(gameServiceToken: gameServiceToken))
         let statusCode = res.httpURLResponse.statusCode
-        if 400..<500 ~= statusCode {
+        if 200...201 ~= statusCode {
+        } else if 401 == statusCode {
             throw Error.invalidGameServiceToken
-        } else if 200..<300 ~= statusCode {
+        } else {
             throw Error.responseError(code: statusCode, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
         }
 
