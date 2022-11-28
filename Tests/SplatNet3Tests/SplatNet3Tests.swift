@@ -21,7 +21,7 @@ final class SplatNet3Tests: XCTestCase {
         SN3Helper.session = IMSessionMock()
         let version = try await SN3Helper.getWebViewVersion()
 
-        let client = try await SN3Client(webVersion: version, gameServiceToken: "", authorizationStorage: AuthorizationMemoryStorage(), session: IMSessionMock())
+        let client = try await SN3Client(webVersion: version, gameServiceToken: "", session: IMSessionMock())
 
         let latestBattleHistories = try await client.getLatestBattleHistories()
         XCTAssertEqual(latestBattleHistories.historyGroups.first!.historyDetails.count, 34)

@@ -4,15 +4,19 @@ import SplatNet3
 
 public class SN3Client {
     private var session: IMSessionType = IMSession.shared
-    private let authorizationStorage: SN3AuthorizationStorage
+    private let internalAuthorizationStorage: SN3AuthorizationStorage
 
     private let webVersion: String
     private let gameServiceToken: String
 
-    public init(webVersion: String, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage, session: IMSessionType? = nil) async throws {
+    public var authorizationStorage: SN3AuthorizationStorage {
+        internalAuthorizationStorage
+    }
+
+    public init(webVersion: String, gameServiceToken: String, internalAuthorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
         self.webVersion = webVersion
         self.gameServiceToken = gameServiceToken
-        self.authorizationStorage = authorizationStorage
+        self.internalAuthorizationStorage = internalAuthorizationStorage
 
         if let session = session {
             self.session = session
@@ -71,7 +75,7 @@ extension SN3Client {
         let decoder = JSONDecoder()
         let bulletTokens = try decoder.decode(BulletTokens.self, from: data)
 
-        try await authorizationStorage.setBulletTokens(bulletTokens)
+        try await internalAuthorizationStorage.setBulletTokens(bulletTokens)
         try await configureSession()
     }
 }
@@ -110,7 +114,7 @@ extension SN3Client {
 
         plugins.append(WebVersionPlugin(webVersion: webVersion))
 
-        if let bulletTokens = try await authorizationStorage.getBulletTokens() {
+        if let bulletTokens = try await internalAuthorizationStorage.getBulletTokens() {
             plugins.append(BulletTokenPlugin(bulletToken: bulletTokens.bulletToken))
         }
 
