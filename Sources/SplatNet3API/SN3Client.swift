@@ -22,11 +22,11 @@ public class SN3Client {
             self.session = session
         }
 
+        try await configureSession()
+
         if try await authorizationStorage.getBulletTokens() == nil {
             try await makeBullet()
         }
-
-        try await configureSession()
     }
 
     public func getLatestBattleHistories() async throws -> BattleHistories {
