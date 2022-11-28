@@ -13,17 +13,20 @@ public class SN3Client {
         internalAuthorizationStorage
     }
 
-    public init(webVersion: String, gameServiceToken: String, internalAuthorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
+    public init(webVersion: String, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
         self.webVersion = webVersion
         self.gameServiceToken = gameServiceToken
-        self.internalAuthorizationStorage = internalAuthorizationStorage
+        self.internalAuthorizationStorage = authorizationStorage
 
         if let session = session {
             self.session = session
         }
 
+        if try await authorizationStorage.getBulletTokens() == nil {
+            try await makeBullet()
+        }
+
         try await configureSession()
-        try await makeBullet()
     }
 
     public func getLatestBattleHistories() async throws -> BattleHistories {
