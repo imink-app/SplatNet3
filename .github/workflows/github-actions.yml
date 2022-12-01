@@ -1,0 +1,38 @@
+name: Generate data
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    strategy:
+      matrix:
+        swift_version: ['5.3']
+    runs-on: ubuntu-latest
+    container:
+      image: swift:${{ matrix.swift_version }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        run: swift build -c release
+      
+      - name: Generate webview data
+        run: |
+          cd Data && ../.build/release/sn3 webview
+
+      - name: setup git config
+        run: |
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          # Stage the file, commit and push
+          git add Data/splatnet3_webview_data.json
+          git commit -m "Update webview data."
+          git push origin master
