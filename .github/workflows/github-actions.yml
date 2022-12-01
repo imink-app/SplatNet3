@@ -34,4 +34,4 @@ jobs:
 
       - name: commit
         run: |
-          git status | grep -qi ".json" && git add Data/*.json && git commit -m "Update data." && git push origin master
+          git status | grep -qi ".json" && git add *.json && git commit -m "Update data." && git push origin master
