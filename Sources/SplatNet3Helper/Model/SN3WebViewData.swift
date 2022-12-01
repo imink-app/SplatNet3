@@ -11,6 +11,15 @@ public struct SN3WebViewData: Codable {
     }
 }
 
+extension SN3WebViewData: Equatable {
+    public static func == (lhs: SN3WebViewData, rhs: SN3WebViewData) -> Bool {
+        lhs.version == rhs.version &&
+        lhs.graphQL == rhs.graphQL
+    }
+}
+
+extension SN3WebViewData.GraphQL: Equatable { }
+
 public extension SN3Helper {
     static func getWebViewData() async throws -> SN3WebViewData {
         var (data, res) = try await session.request(api: SN3API.web())
