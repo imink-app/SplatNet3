@@ -1,5 +1,4 @@
 {
-  "version" : "2.0.0-1b57b7ac",
   "graphql" : {
     "apis" : {
       "JourneyQuery" : "bc71fc0264f3f72256724b069f7a4097",
@@ -87,5 +86,6 @@
       "refetchableCoopHistory_coopResultQuery" : "d82a506052aef380e584c695e105f78b",
       "BankaraBattleHistoriesRefetchQuery" : "964c03ed28eb640438d8113534de2fe4"
     }
-  }
+  },
+  "version" : "2.0.0-1b57b7ac"
 }
