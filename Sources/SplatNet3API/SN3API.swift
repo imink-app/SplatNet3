@@ -90,8 +90,8 @@ extension SN3API {
     var sampleDataFileName: String {
         switch self {
         case .web(let path):
-            if path == "/static/js/main.748558dc.js" {
-                return "main.748558dc.js"
+            if path.hasPrefix("/static/js/main.") {
+                return "main.js"
             } else {
                 return "api.lp1.av5ja.srv.nintendo.net.html"
             }

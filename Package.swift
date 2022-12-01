@@ -15,10 +15,14 @@ let package = Package(
         .library(
             name: "SplatNet3Helper",
             targets: ["SplatNet3Helper"]),
+        .executable(
+            name: "sn3",
+            targets: ["SplatNet3CLI"]),
     ],
     dependencies: [
         .package(url: "https://github.com/imink-app/InkMoya.git", branch: "main"),
         .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.4.3"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
     ],
     targets: [
         .target(
@@ -36,6 +40,12 @@ let package = Package(
                 "SplatNet3API",
                 .product(name: "SwiftSoup", package: "SwiftSoup"),
                 ]),
+        .executableTarget(
+            name: "SplatNet3CLI",
+            dependencies: [
+                "SplatNet3Helper",
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+            ]),
         .testTarget(
             name: "SplatNet3Tests",
             dependencies: ["SplatNet3", "SplatNet3API", "SplatNet3Helper"]),

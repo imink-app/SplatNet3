@@ -6,15 +6,23 @@ import XCTest
 
 final class SplatNet3Tests: XCTestCase {
     func testHelper() async throws {
-        SN3Helper.session = IMSessionMock()
+        // SN3Helper.session = IMSessionMock()
 
-        let version = try await SN3Helper.getWebViewVersion()
-        let versionInformations = version.split(separator: "-")
+        let webViewData = try await SN3Helper.getWebViewData()
+        let versionInformations = webViewData.version.split(separator: "-")
         XCTAssertEqual(versionInformations.count, 2)
         let prefix = versionInformations[0]
-        XCTAssertEqual(prefix, "1.0.0")
+        XCTAssertEqual(prefix.split(separator: ".").count, 3)
         let suffix = versionInformations[1]
-        XCTAssertEqual(suffix, "5644e7a2")
+        XCTAssertEqual(suffix.count, 8)
+
+        let graphQLAPIs = webViewData.graphQL.apis
+        XCTAssert(graphQLAPIs.keys.count > 0)
+    }
+
+    func testClientInit() async throws {
+        SplatNet3.setLogLevel(.trace)
+        try await SN3Client(webVersion: "", gameServiceToken: "", session: IMSessionMock())
     }
 
     func testClient() async throws {
