@@ -16,7 +16,7 @@ final class SplatNet3Tests: XCTestCase {
         let suffix = versionInformations[1]
         XCTAssertEqual(suffix.count, 8)
 
-        let graphQLAPIs = webViewData.graphQL.apis
+        let graphQLAPIs = webViewData.graphql.apis
         XCTAssert(graphQLAPIs.keys.count > 0)
     }
 

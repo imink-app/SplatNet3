@@ -4,7 +4,7 @@ import SwiftSoup
 
 public struct SN3WebViewData: Codable {
     let version: String
-    let graphQL: GraphQL
+    let graphql: GraphQL
 
     public struct GraphQL: Codable {
         let apis: [String: String]
@@ -14,7 +14,7 @@ public struct SN3WebViewData: Codable {
 extension SN3WebViewData: Equatable {
     public static func == (lhs: SN3WebViewData, rhs: SN3WebViewData) -> Bool {
         lhs.version == rhs.version &&
-        lhs.graphQL == rhs.graphQL
+        lhs.graphql == rhs.graphql
     }
 }
 
@@ -49,7 +49,7 @@ public extension SN3Helper {
 
         let sn3Data = SN3WebViewData(
             version: try parseWebViewVersion(jsContent: jsContent),
-            graphQL: SN3WebViewData.GraphQL(apis: try parseGraphQLAPIs(jsContent: jsContent))
+            graphql: SN3WebViewData.GraphQL(apis: try parseGraphQLAPIs(jsContent: jsContent))
         )
 
         return sn3Data
