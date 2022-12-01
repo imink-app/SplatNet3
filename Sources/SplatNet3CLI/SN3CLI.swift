@@ -15,6 +15,7 @@ struct SN3CLI: AsyncParsableCommand {
         if cmd == .webview {
             let decoder = JSONDecoder()
             let encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
 
             let fm = FileManager()
             let savePath = fm.currentDirectoryPath.appendingPathComponent("splatnet3_webview_data.json")
