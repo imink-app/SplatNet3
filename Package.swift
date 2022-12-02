@@ -32,6 +32,7 @@ let package = Package(
             name: "SplatNet3API",
             dependencies: [
                 "SplatNet3", 
+                "SplatNet3Helper",
                 .product(name: "InkMoya", package: "InkMoya"),
                 ],
             resources: [.copy("SampleData")]),
