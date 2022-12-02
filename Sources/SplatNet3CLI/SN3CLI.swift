@@ -17,6 +17,7 @@ struct SN3CLI: AsyncParsableCommand {
 
             let encoder = JSONEncoder()
             encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            encoder.keyEncodingStrategy = .convertToSnakeCase
 
             let fm = FileManager()
             let savePath = fm.currentDirectoryPath.appendingPathComponent("splatnet3_webview_data.json")

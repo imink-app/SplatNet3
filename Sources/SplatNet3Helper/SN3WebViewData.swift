@@ -6,17 +6,17 @@ import SwiftSoup
     import FoundationNetworking
 #endif
 
-public typealias GraphQLMap = [String: String]
+public typealias GraphQLHashMap = [String: String]
 
 public struct SN3WebViewData: Codable {
     public let version: String
     public let graphql: GraphQL
 
     public struct GraphQL: Codable {
-        public let apis: GraphQLMap
+        public let hashMap: GraphQLHashMap
 
-        public init(apis: GraphQLMap) {
-            self.apis = apis
+        public init(hashMap: GraphQLHashMap) {
+            self.hashMap = hashMap
         }
     }
 
@@ -68,7 +68,7 @@ public extension SN3Helper {
 
         let sn3Data = SN3WebViewData(
             version: try parseWebViewVersion(jsContent: jsContent),
-            graphql: SN3WebViewData.GraphQL(apis: try parseGraphQLAPIs(jsContent: jsContent))
+            graphql: SN3WebViewData.GraphQL(hashMap: try parseGraphQLHashMap(jsContent: jsContent))
         )
 
         return sn3Data
@@ -98,7 +98,7 @@ public extension SN3Helper {
         return "\(version)-\(revision[revision.startIndex..<revision.index(revision.startIndex, offsetBy: 8)])"
     }
 
-    private static func parseGraphQLAPIs(jsContent: String) throws -> [String: String] {
+    private static func parseGraphQLHashMap(jsContent: String) throws -> [String: String] {
         guard
             let matchs = try? NSRegularExpression(
                 pattern: #"params:\{id:.(?<id>[0-9a-f]{32}).,metadata:\{\},name:.(?<name>[a-zA-Z0-9_]+).,"#,
@@ -108,7 +108,7 @@ public extension SN3Helper {
             throw Error.parseDataError()
         }
 
-        var apis = [String: String]()
+        var hashMap = [String: String]()
         for match in matchs {
             let hashRange = match.range(withName: "id")
             let nameRange = match.range(withName: "name")
@@ -121,9 +121,9 @@ public extension SN3Helper {
             let hash = NSString(string: jsContent).substring(with: hashRange)
             let name = NSString(string: jsContent).substring(with: nameRange)
 
-            apis[name] = hash
+            hashMap[name] = hash
         }
 
-        return apis
+        return hashMap
     }
 }

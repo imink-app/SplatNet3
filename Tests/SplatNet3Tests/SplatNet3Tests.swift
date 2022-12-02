@@ -16,14 +16,14 @@ final class SplatNet3Tests: XCTestCase {
         let suffix = versionInformations[1]
         XCTAssertEqual(suffix.count, 8)
 
-        let graphQLAPIs = webViewData.graphql.apis
+        let graphQLAPIs = webViewData.graphql.hashMap
         XCTAssert(graphQLAPIs.keys.count > 0)
     }
 
     func testClientInit() async throws {
         SplatNet3.setLogLevel(.trace)
         let webviewData = try await SN3Helper.getWebViewData()
-        let _ = try await SN3Client(webVersion: webviewData.version, graphQLMap: webviewData.graphql.apis, gameServiceToken: "", session: IMSessionMock())
+        let _ = try await SN3Client(webVersion: webviewData.version, graphQLHashMap: webviewData.graphql.hashMap, gameServiceToken: "", session: IMSessionMock())
     }
 
     func testClient() async throws {
@@ -32,7 +32,7 @@ final class SplatNet3Tests: XCTestCase {
         SN3Helper.session = IMSessionMock()
 
         let webviewData = try await SN3Helper.getWebViewData()
-        let client = try await SN3Client(webVersion: webviewData.version, graphQLMap: webviewData.graphql.apis, gameServiceToken: "", session: IMSessionMock())
+        let client = try await SN3Client(webVersion: webviewData.version, graphQLHashMap: webviewData.graphql.hashMap, gameServiceToken: "", session: IMSessionMock())
 
         let latestBattleHistories = try await client.getLatestBattleHistories()
         XCTAssertEqual(latestBattleHistories.historyGroups.first!.historyDetails.count, 34)

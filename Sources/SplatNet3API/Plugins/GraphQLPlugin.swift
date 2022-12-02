@@ -7,14 +7,14 @@ import SplatNet3Helper
 #endif
 
 public struct GraphQLPlugin: PluginType {
-    let graphQLMap: GraphQLMap
+    let graphQLHashMap: GraphQLHashMap
 
     public func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         var request = request
         if let target = target as? SN3API,
 
             case .graphQL(let query) = target,
-            let hash = graphQLMap[query.graphQLName],
+            let hash = graphQLHashMap[query.graphQLName],
 
             case .jsonData(let body) = target.data,
             let oldBody = body as? GraphQLRequestBody {
