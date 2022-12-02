@@ -1,6 +1,6 @@
 {
   "graphql" : {
-    "apis" : {
+    "hash_map" : {
       "BankaraBattleHistoriesQuery" : "de4754588109b77dbcb90fbe44b612ee",
       "BankaraBattleHistoriesRefetchQuery" : "964c03ed28eb640438d8113534de2fe4",
       "BattleHistoryCurrentPlayerQuery" : "49dd00428fb8e9b4dde62f585c8de1e0",
