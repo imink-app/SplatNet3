@@ -12,8 +12,9 @@ jobs:
       matrix:
         swift_version: ['5.7']
     runs-on: ubuntu-latest
-    ACTIONS_RUNNER_DEBUG: true
-    ACTIONS_STEP_DEBUG: true
+    env:
+      ACTIONS_RUNNER_DEBUG: true
+      ACTIONS_STEP_DEBUG: true
     container:
       image: swift:${{ matrix.swift_version }}
     steps:
