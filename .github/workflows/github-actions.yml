@@ -29,12 +29,9 @@ jobs:
         run: |
           cd Data && ../.build/release/sn3 webview
 
-      - name: setup git config
+      - name: Commit data
         run: |
-          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-
-      - name: commit
-        run: |
-          git status | grep -qi Data/*.json && git add Data/*.json && git commit -m "Update data." && git push origin master
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Data/*json
+          if test "$(git diff --name-only --cached 2>/dev/null | wc -l)" -gt "0" ; then git commit -m "Update data." && git push; else echo No changes found; fi
