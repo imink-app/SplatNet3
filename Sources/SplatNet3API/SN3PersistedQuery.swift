@@ -9,22 +9,22 @@ public enum SN3PersistedQuery {
 }
 
 extension SN3PersistedQuery {
-    var hash: String {
+    var graphQLName: String {
         switch self {
             case .latestBattleHistories:
-                return "7d8b560e31617e981cf7c8aa1ca13a00"
+                return "LatestBattleHistoriesQuery"
             case .regularBattleHistories:
-                return "f6e7e0277e03ff14edfef3b41f70cd33"
+                return "RegularBattleHistoriesQuery"
             case .bankaraBattleHistories:
-                return "c1553ac75de0a3ea497cdbafaa93e95b"
+                return "BankaraBattleHistoriesQuery"
             case .privateBattleHistories:
-                return "38e0529de8bc77189504d26c7a14e0b8"
+                return "PrivateBattleHistoriesQuery"
             case .vsHistoryDetail:
-                return "2b085984f729cd51938fc069ceef784a"
+                return "VsHistoryDetailQuery"
             case .coopHistory:
-                return "817618ce39bcf5570f52a97d73301b30"
+                return "CoopHistoryQuery"
             case .coopHistoryDetail:
-                return "f3799a033f0a7ad4b1b396f9a3bafb1e"
+                return "CoopHistoryDetailQuery"
         }
     }
 }

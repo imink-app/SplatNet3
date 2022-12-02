@@ -1,20 +1,23 @@
 import Foundation
 import InkMoya
 import SplatNet3
+import SplatNet3Helper
 
 public class SN3Client {
     private var session: IMSessionType = IMSession.shared
     private let internalAuthorizationStorage: SN3AuthorizationStorage
 
     private let webVersion: String
+    private let graphQLMap: GraphQLMap
     private let gameServiceToken: String
 
     public var authorizationStorage: SN3AuthorizationStorage {
         internalAuthorizationStorage
     }
 
-    public init(webVersion: String, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
+    public init(webVersion: String, graphQLMap: GraphQLMap, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
         self.webVersion = webVersion
+        self.graphQLMap = graphQLMap
         self.gameServiceToken = gameServiceToken
         self.internalAuthorizationStorage = authorizationStorage
 
@@ -117,6 +120,7 @@ extension SN3Client {
         var plugins = [PluginType]()
 
         plugins.append(WebVersionPlugin(webVersion: webVersion))
+        plugins.append(GraphQLPlugin(graphQLMap: graphQLMap))
 
         if let bulletTokens = try await internalAuthorizationStorage.getBulletTokens() {
             plugins.append(BulletTokenPlugin(bulletToken: bulletTokens.bulletToken))

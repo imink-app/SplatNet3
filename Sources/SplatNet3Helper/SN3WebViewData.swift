@@ -1,13 +1,28 @@
 import Foundation
-import SplatNet3API
+import InkMoya
 import SwiftSoup
 
+#if canImport(FoundationNetworking)
+    import FoundationNetworking
+#endif
+
+public typealias GraphQLMap = [String: String]
+
 public struct SN3WebViewData: Codable {
-    let version: String
-    let graphql: GraphQL
+    public let version: String
+    public let graphql: GraphQL
 
     public struct GraphQL: Codable {
-        let apis: [String: String]
+        public let apis: GraphQLMap
+
+        public init(apis: GraphQLMap) {
+            self.apis = apis
+        }
+    }
+
+    public init(version: String, graphql: GraphQL) {
+        self.version = version
+        self.graphql = graphql
     }
 }
 
@@ -22,7 +37,10 @@ extension SN3WebViewData.GraphQL: Equatable { }
 
 public extension SN3Helper {
     static func getWebViewData() async throws -> SN3WebViewData {
-        var (data, res) = try await session.request(api: SN3API.web())
+        let webviewURL = URL(string: "https://api.lp1.av5ja.srv.nintendo.net")!
+
+        var req = URLRequest(url: webviewURL)
+        var (data, res) = try await session.request(req)
         if res.httpURLResponse.statusCode != 200 {
             throw Error.requestHtmlError(url: res.url)
         }
@@ -38,7 +56,8 @@ public extension SN3Helper {
             throw Error.parseDataError(url:res.url)
         }
 
-        (data, res) = try await session.request(api: SN3API.web(path: mainJsPath))
+        req = URLRequest(url: webviewURL.appendingPathComponent(mainJsPath))
+        (data, res) = try await session.request(req)
         if res.httpURLResponse.statusCode != 200 {
             throw Error.requestHtmlError(url: res.url)
         }

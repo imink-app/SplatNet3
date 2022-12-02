@@ -22,7 +22,8 @@ final class SplatNet3Tests: XCTestCase {
 
     func testClientInit() async throws {
         SplatNet3.setLogLevel(.trace)
-        try await SN3Client(webVersion: "", gameServiceToken: "", session: IMSessionMock())
+        let webviewData = try await SN3Helper.getWebViewData()
+        let _ = try await SN3Client(webVersion: webviewData.version, graphQLMap: webviewData.graphql.apis, gameServiceToken: "", session: IMSessionMock())
     }
 
     func testClient() async throws {
@@ -30,7 +31,8 @@ final class SplatNet3Tests: XCTestCase {
 
         SN3Helper.session = IMSessionMock()
 
-        let client = try await SN3Client(webVersion: "", gameServiceToken: "", session: IMSessionMock())
+        let webviewData = try await SN3Helper.getWebViewData()
+        let client = try await SN3Client(webVersion: webviewData.version, graphQLMap: webviewData.graphql.apis, gameServiceToken: "", session: IMSessionMock())
 
         let latestBattleHistories = try await client.getLatestBattleHistories()
         XCTAssertEqual(latestBattleHistories.historyGroups.first!.historyDetails.count, 34)

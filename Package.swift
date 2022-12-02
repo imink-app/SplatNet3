@@ -37,7 +37,7 @@ let package = Package(
             resources: [.copy("SampleData")]),
         .target(name: "SplatNet3Helper",
             dependencies: [
-                "SplatNet3API",
+                .product(name: "InkMoya", package: "InkMoya"),
                 .product(name: "SwiftSoup", package: "SwiftSoup"),
                 ]),
         .executableTarget(

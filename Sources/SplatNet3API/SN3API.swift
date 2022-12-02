@@ -71,7 +71,7 @@ extension SN3API: TargetType {
                         extensions: .init(
                             persistedQuery: .init(
                                 version: 1,
-                                sha256Hash: query.hash
+                                sha256Hash: "Replace with hash in GraphQLPlugin.swift"
                             )
                         )
                     )
