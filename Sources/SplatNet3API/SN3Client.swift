@@ -1,6 +1,5 @@
 import Foundation
 import InkMoya
-import SplatNet3
 import SplatNet3Helper
 
 public class SN3Client {
@@ -31,40 +30,14 @@ public class SN3Client {
             try await makeBullet()
         }
     }
-
-    public func getLatestBattleHistories() async throws -> BattleHistories {
-        let response: SN3Response<SN3LatestBattleHistoriesData> = try await graphQL(.latestBattleHistories)
-        return response.data.latestBattleHistories
-    }
-
-    public func getRegularBattleHistories() async throws -> BattleHistories {
-        let response: SN3Response<SN3RegularBattleHistoriesData> = try await graphQL(.regularBattleHistories)
-        return response.data.regularBattleHistories
-    }
-
-    public func getBankaraBattleHistories() async throws -> BattleHistories {
-        let response: SN3Response<SN3BankaraBattleHistoriesData> = try await graphQL(.bankaraBattleHistories)
-        return response.data.bankaraBattleHistories
-    }
-
-    public func getPrivateBattleHistories() async throws -> BattleHistories {
-        let response: SN3Response<SN3PrivateBattleHistoriesData> = try await graphQL(.privateBattleHistories)
-        return response.data.privateBattleHistories
-    }
-
-    public func getVSHistoryDetail(vsResultId: String) async throws -> VSHistoryDetail {
-        let response: SN3Response<SN3VSHistoryDetailData> = try await graphQL(.vsHistoryDetail(vsResultId: vsResultId))
-        return response.data.vsHistoryDetail
-    }
-
-    public func getCoopHistory() async throws -> CoopHistory {
-        let response: SN3Response<SN3CoopHistoryData> = try await graphQL(.coopHistory)
-        return response.data.coopResult
-    }
-
-    public func getCoopHistoryDetail(coopHistoryDetailId: String) async throws -> CoopHistoryDetail {
-        let response: SN3Response<SN3CoopHistoryDetailData> = try await graphQL(.coopHistoryDetail(coopHistoryDetailId: coopHistoryDetailId))
-        return response.data.coopHistoryDetail
+    
+    func graphQL<T: SN3PersistedQuery>(_ query: T)  async throws -> T.Response {
+        do {
+            return try await requestGraphQL(query)
+        } catch Error.invalidBulletToken {
+            try await makeBullet()
+            return try await graphQL(query)
+        }
     }
 }
 
@@ -80,7 +53,6 @@ extension SN3Client {
             throw Error.responseError(code: code, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
         }
 
-        let decoder = JSONDecoder()
         let bulletTokens = try JSONDecoder().decode(BulletTokens.self, from: data)
 
         try await internalAuthorizationStorage.setBulletTokens(bulletTokens)
@@ -89,17 +61,9 @@ extension SN3Client {
 }
 
 extension SN3Client {
-    private func graphQL<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
-        do {
-            return try await requestGraphQL(query)
-        } catch Error.invalidBulletToken {
-            try await makeBullet()
-            return try await graphQL(query)
-        }
-    }
-
-    private func requestGraphQL<T>(_ query: SN3PersistedQuery) async throws -> SN3Response<T> where T : Decodable {
-        let (data, res) = try await session.request(api: SN3API.graphQL(query))
+    
+    private func requestGraphQL<T: SN3PersistedQuery>(_ query: T)  async throws -> T.Response {
+        let (data, res) = try await session.request(api: query)
         let statusCode = res.httpURLResponse.statusCode
         if statusCode == 401 {
             throw Error.invalidBulletToken
@@ -111,8 +75,8 @@ extension SN3Client {
 
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(SN3Response<T>.self, from: data)
-        return response
+        let response = try decoder.decode(T.TopLevelResponse.self, from: data)
+        return response[keyPath: T.responseKeyPath]
     }
 }
 

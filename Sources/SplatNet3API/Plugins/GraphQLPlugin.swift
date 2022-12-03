@@ -12,23 +12,25 @@ public struct GraphQLPlugin: PluginType {
     
     public func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         var request = request
-        if let target = target as? SN3API,
-           case .graphQL(let query) = target,
-           let hash = graphQLHashMap[query.graphQLName],
-           case .jsonData(let body) = target.data,
-           let oldBody = body as? GraphQLRequestBody {
-            
-            let body = GraphQLRequestBody(
-                variables: oldBody.variables,
-                extensions: .init(
-                    persistedQuery: .init(
-                        version: oldBody.extensions.persistedQuery.version,
-                        sha256Hash: hash
-                    )
-                )
-            )
-            request.httpBody = body.toJSONData()
+        guard let target = target as? any SN3PersistedQuery,
+              let hash = graphQLHashMap[type(of: target).name],
+              var body = target.data?.jsonObj as? GraphQLRequestBody else {
+            return request
         }
+        body.extensions.persistedQuery.sha256Hash = hash
+        request.httpBody = body.toJSONData()
         return request
+    }
+}
+
+private extension MediaType {
+    
+    var jsonObj: Encodable? {
+        switch self {
+        case .jsonData(let data):
+            return data
+        default:
+            return nil
+        }
     }
 }
