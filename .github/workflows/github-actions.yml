@@ -28,7 +28,7 @@ jobs:
       
       - name: Generate webview data
         run: |
-          cd Data && ../.build/release/sn3 webview
+          .build/release/sn3 webview > Data/splatnet3_webview_data.json
 
       - name: Commit data
         run: |

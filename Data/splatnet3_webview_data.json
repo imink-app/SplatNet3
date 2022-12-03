@@ -47,6 +47,8 @@
       "JourneyRefetchQuery" : "09eee118fa16415d6bc3846bc6e5d8e5",
       "LatestBattleHistoriesQuery" : "4f5f26e64bca394b45345a65a2f383bd",
       "LatestBattleHistoriesRefetchQuery" : "047c1ff4d6b9f03b082aa6ffdb200a6a",
+      "myOutfitCommonDataEquipmentsQuery" : "d29cd0c2b5e6bac90dd5b817914832f8",
+      "myOutfitCommonDataFilteringConditionQuery" : "d02ab22c9dccc440076055c8baa0fa7a",
       "MyOutfitDetailQuery" : "d935d9e9ba7a5b6b5d6ece7f253304fc",
       "MyOutfitsQuery" : "81d9a6849467d2aa6b1603ebcedbddbe",
       "MyOutfitsRefetchQuery" : "10db4e349f3123c56df14e3adec2ee6f",
@@ -57,6 +59,7 @@
       "PrivateBattleHistoriesQuery" : "1d6ed57dc8b801863126ad4f351dfb9a",
       "PrivateBattleHistoriesRefetchQuery" : "4835a28419ad3c7bfacbb30ca4008140",
       "RankingHoldersFestTeamRankingHoldersPaginationQuery" : "be2eb9e9b8dd680519eb59cc46c1a32b",
+      "refetchableCoopHistory_coopResultQuery" : "d82a506052aef380e584c695e105f78b",
       "RegularBattleHistoriesQuery" : "d5b795d09e67ce153e622a184b7e7dfa",
       "RegularBattleHistoriesRefetchQuery" : "04e5d83f4243541c369b2e7556b9b809",
       "ReplayModalReserveReplayDownloadMutation" : "87bff2b854168b496c2da8c0e7f3e5bc",
@@ -70,6 +73,7 @@
       "StageScheduleQuery" : "730cd98e84f1030d3e9ac86b6f1aae13",
       "SupportButton_SupportChallengeMutation" : "30aa261475d43bd765b4200fc67003c8",
       "UpdateMyOutfitMutation" : "bb809066282e7d659d3b9e9d4e46b43b",
+      "useCurrentFestQuery" : "c0429fd738d829445e994d3370999764",
       "VotesUpdateFestVoteMutation" : "a2c742c840718f37488e0394cd6e1e08",
       "VsHistoryDetailPagerRefetchQuery" : "994cf141e55213e6923426caf37a1934",
       "VsHistoryDetailQuery" : "291295ad311b99a6288fc95a5c4cb2d2",
@@ -80,11 +84,7 @@
       "XRankingDetailQuery" : "ec7174376203f9901713e116075c5ecd",
       "XRankingDetailRefetchQuery" : "2aac81b2ec56fb2d15ce3d6a2b625772",
       "XRankingQuery" : "d771444f2584d938db8d10055599011d",
-      "XRankingRefetchQuery" : "5149402597bd2531b4eea04692d8bfd5",
-      "myOutfitCommonDataEquipmentsQuery" : "d29cd0c2b5e6bac90dd5b817914832f8",
-      "myOutfitCommonDataFilteringConditionQuery" : "d02ab22c9dccc440076055c8baa0fa7a",
-      "refetchableCoopHistory_coopResultQuery" : "d82a506052aef380e584c695e105f78b",
-      "useCurrentFestQuery" : "c0429fd738d829445e994d3370999764"
+      "XRankingRefetchQuery" : "5149402597bd2531b4eea04692d8bfd5"
     }
   },
   "version" : "2.0.0-18810d39"
