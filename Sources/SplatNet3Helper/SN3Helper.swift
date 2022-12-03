@@ -48,13 +48,9 @@ public struct SN3Helper {
         return sn3Data
     }
 
+    
     private static func parseWebViewVersion(jsContent: String) throws -> String {
-        guard
-            let match = try? NSRegularExpression(
-                pattern: #"=.(?<revision>[0-9a-f]{40}).*revision_info_not_set.*=.(?<version>\d+\.\d+\.\d+)-"#,
-                options: [])
-                .firstMatch(in: jsContent, range: NSRange(location: 0, length: jsContent.count))
-        else {
+        guard let match = versionRegex.firstMatch(in: jsContent, range: NSRange(location: 0, length: jsContent.count)) else {
             throw Error.parseDataError()
         }
 
@@ -73,15 +69,7 @@ public struct SN3Helper {
     }
 
     private static func parseGraphQLHashMap(jsContent: String) throws -> [String: String] {
-        guard
-            let matchs = try? NSRegularExpression(
-                pattern: #"params:\{id:.(?<id>[0-9a-f]{32}).,metadata:\{\},name:.(?<name>[a-zA-Z0-9_]+).,"#,
-                options: [])
-                .matches(in: jsContent, range: NSRange(location: 0, length: jsContent.count))
-        else {
-            throw Error.parseDataError()
-        }
-
+        let matchs = hashRegex.matches(in: jsContent, range: NSRange(location: 0, length: jsContent.count))
         var hashMap = [String: String]()
         for match in matchs {
             let hashRange = match.range(withName: "id")
@@ -102,10 +90,12 @@ public struct SN3Helper {
     }
 }
 
-
 public extension SN3Helper {
     enum Error: Swift.Error {
         case requestHtmlError(url: URL? = nil)
         case parseDataError(url: URL? = nil)
     }
 }
+
+private let versionRegex = try! NSRegularExpression(pattern: #"=.(?<revision>[0-9a-f]{40}).*revision_info_not_set.*=.(?<version>\d+\.\d+\.\d+)-"#, options: [])
+private let hashRegex = try! NSRegularExpression(pattern: #"params:\{id:.(?<id>[0-9a-f]{32}).,metadata:\{\},name:.(?<name>[a-zA-Z0-9_]+).,"#, options: [])
