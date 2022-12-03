@@ -8,14 +8,14 @@ public class SN3Client {
     private let internalAuthorizationStorage: SN3AuthorizationStorage
 
     private let webVersion: String
-    private let graphQLHashMap: GraphQLHashMap
+    private let graphQLHashMap: [String: String]
     private let gameServiceToken: String
 
     public var authorizationStorage: SN3AuthorizationStorage {
         internalAuthorizationStorage
     }
 
-    public init(webVersion: String, graphQLHashMap: GraphQLHashMap, gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
+    public init(webVersion: String, graphQLHashMap: [String: String], gameServiceToken: String, authorizationStorage: SN3AuthorizationStorage = AuthorizationMemoryStorage(), session: IMSessionType? = nil) async throws {
         self.webVersion = webVersion
         self.graphQLHashMap = graphQLHashMap
         self.gameServiceToken = gameServiceToken
@@ -71,16 +71,17 @@ public class SN3Client {
 extension SN3Client {
     private func makeBullet() async throws {
         let (data, res) = try await session.request(api: SN3API.bulletTokens(gameServiceToken: gameServiceToken))
-        let statusCode = res.httpURLResponse.statusCode
-        if 200...201 ~= statusCode {
-        } else if 401 == statusCode {
+        switch res.httpURLResponse.statusCode {
+        case 200, 201:
+            break // OK
+        case 401:
             throw Error.invalidGameServiceToken
-        } else {
-            throw Error.responseError(code: statusCode, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
+        case let code:
+            throw Error.responseError(code: code, url: res.httpURLResponse.url, body: String(data: data, encoding: .utf8))
         }
 
         let decoder = JSONDecoder()
-        let bulletTokens = try decoder.decode(BulletTokens.self, from: data)
+        let bulletTokens = try JSONDecoder().decode(BulletTokens.self, from: data)
 
         try await internalAuthorizationStorage.setBulletTokens(bulletTokens)
         try await configureSession()

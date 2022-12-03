@@ -1,6 +1,5 @@
 import Foundation
 
-    
 public struct CoopHistory: Decodable {
     public let historyGroupsOnlyFirst: SN3NodesList<First>
     public let regularAverageClearWave: Double
