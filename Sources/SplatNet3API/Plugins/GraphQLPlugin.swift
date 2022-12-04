@@ -18,7 +18,7 @@ public struct GraphQLPlugin: PluginType {
             return request
         }
         body.extensions.persistedQuery.sha256Hash = hash
-        request.httpBody = body.toJSONData()
+        request.httpBody = try? JSONEncoder().encode(body)
         return request
     }
 }

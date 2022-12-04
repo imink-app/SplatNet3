@@ -47,7 +47,7 @@ final class SplatNet3Tests: XCTestCase {
         XCTAssertEqual(privateBattleHistories.historyGroups.count, 0)
 
         let vsHistoryDetail = try await client.graphQL(.vsHistoryDetail(id: "VnNIaXN0b3J5RGV0YWlsLXUtcXNxaXB5eWllbGpsbXk0Z3RybW06QkFOS0FSQToyMDIyMTAwNFQxNTQzNDdfOTJiODljYTUtODNlYy00OTBhLTlkZDQtNWMyMjY3ZTkwOTI1"))
-        XCTAssertEqual(vsHistoryDetail.id.rawValue, "VsHistoryDetail-u-qsqipyyieljlmy4gtrmm:BANKARA:20221004T154347_92b89ca5-83ec-490a-9dd4-5c2267e90925")
+        XCTAssertEqual(vsHistoryDetail.id.id, "VsHistoryDetail-u-qsqipyyieljlmy4gtrmm:BANKARA:20221004T154347_92b89ca5-83ec-490a-9dd4-5c2267e90925")
         XCTAssertEqual(vsHistoryDetail.playedTime.rawValue, "2022-10-04T15:43:47Z")
 
         let disconnectionVSHistoryDetail = try await client.graphQL(.vsHistoryDetail(id: "disconnection"))

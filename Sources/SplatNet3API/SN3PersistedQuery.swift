@@ -1,6 +1,5 @@
 // https://github.com/samuelthomas2774/nxapi/discussions/11
-// https://github.com/samuelthomas2774/nxapi/blob/main/src/api/splatnet3.ts
-// https://github.com/samuelthomas2774/nxapi/blob/main/src/api/splatnet3-types.ts
+// https://github.com/nintendoapis/splatnet3-types
 
 import Foundation
 import InkMoya
