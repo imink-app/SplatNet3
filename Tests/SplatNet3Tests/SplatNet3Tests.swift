@@ -29,8 +29,6 @@ final class SplatNet3Tests: XCTestCase {
     func testClient() async throws {
         SplatNet3.setLogLevel(.trace)
 
-        SN3Helper.session = IMSessionMock()
-
         let webviewData = try await SN3Helper.getWebViewData()
         let client = try await SN3Client(webVersion: webviewData.version, graphQLHashMap: webviewData.graphql.hashMap, gameServiceToken: "", session: IMSessionMock())
 

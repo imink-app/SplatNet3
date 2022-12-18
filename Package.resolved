@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/imink-app/InkMoya.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "313dd88b01d56b156fa6c490b47d38dfc2feeadf"
+        "revision" : "c8c27827c038fddd83a10bc3c51c4e8b79bcab02",
+        "version" : "0.1.0"
       }
     },
     {

@@ -16,6 +16,5 @@ extension SplatNet3 {
 
     public static func setLogLevel(_ logLevel: LogLevel) {
         SplatNet3.logLevel = logLevel
-        InkMoya.setLogLevel(logLevel)
     }
 }

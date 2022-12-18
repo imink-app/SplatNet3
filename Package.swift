@@ -24,7 +24,7 @@ let package = Package(
             targets: ["SplatNet3CLI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/imink-app/InkMoya.git", branch: "main"),
+        .package(url: "https://github.com/imink-app/InkMoya.git", .upToNextMinor(from: "0.1.0")),
         .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.4.3"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
     ],

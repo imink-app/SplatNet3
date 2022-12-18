@@ -1,5 +1,5 @@
 import Foundation
-import InkMoya
+//import InkMoya
 import SwiftSoup
 
 #if canImport(FoundationNetworking)
@@ -8,14 +8,12 @@ import SwiftSoup
 
 public struct SN3Helper {
     
-    static var session: IMSessionType = IMSession.shared
-    
     public static func getWebViewData() async throws -> SN3WebViewData {
         let webviewURL = URL(string: "https://api.lp1.av5ja.srv.nintendo.net")!
 
         var req = URLRequest(url: webviewURL)
-        var (data, res) = try await session.request(req)
-        if res.httpURLResponse.statusCode != 200 {
+        var (data, res) = try await URLSession.shared.data(for: req)
+        if (res as? HTTPURLResponse)?.statusCode != 200 {
             throw Error.requestHtmlError(url: res.url)
         }
 
@@ -31,8 +29,8 @@ public struct SN3Helper {
         }
 
         req = URLRequest(url: webviewURL.appendingPathComponent(mainJsPath))
-        (data, res) = try await session.request(req)
-        if res.httpURLResponse.statusCode != 200 {
+        (data, res) = try await URLSession.shared.data(for: req)
+        if (res as? HTTPURLResponse)?.statusCode != 200 {
             throw Error.requestHtmlError(url: res.url)
         }
 
