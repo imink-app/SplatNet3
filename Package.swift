@@ -48,6 +48,7 @@ let package = Package(
             name: "SplatNet3CLI",
             dependencies: [
                 "SplatNet3Helper",
+                .product(name: "InkMoya", package: "InkMoya"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]),
         .testTarget(
