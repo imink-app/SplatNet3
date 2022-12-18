@@ -6,7 +6,6 @@ import XCTest
 
 final class SplatNet3Tests: XCTestCase {
     func testHelper() async throws {
-        // SN3Helper.session = IMSessionMock()
 
         let webViewData = try await SN3Helper.getWebViewData()
         let versionInformations = webViewData.version.split(separator: "-")

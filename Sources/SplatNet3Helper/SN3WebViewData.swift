@@ -1,5 +1,4 @@
 import Foundation
-import InkMoya
 
 #if canImport(FoundationNetworking)
     import FoundationNetworking
