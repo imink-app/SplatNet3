@@ -96,4 +96,4 @@ public extension SN3Helper {
 }
 
 private let versionRegex = try! NSRegularExpression(pattern: #"=.(?<revision>[0-9a-f]{40}).*revision_info_not_set.*=.(?<version>\d+\.\d+\.\d+)-"#, options: [])
-private let hashRegex = try! NSRegularExpression(pattern: #"params:\{id:.(?<id>[0-9a-f]{32}).,metadata:\{\},name:.(?<name>[a-zA-Z0-9_]+).,"#, options: [])
+private let hashRegex = try! NSRegularExpression(pattern: #"params:\{id:.(?<id>[0-9a-f]{64}).,metadata:\{\},name:.(?<name>[a-zA-Z0-9_]+).,"#, options: [])
